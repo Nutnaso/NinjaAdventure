@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://lwwiccut3p46"]
 
-[ext_resource type="Script" path="res://system/behavior/behavior_follow.gd" id="1_itg3m"]
-[ext_resource type="Script" path="res://system/behavior/area_target_finder.gd" id="2_0iy8g"]
+[ext_resource type="Script" uid="uid://dra54bhq571hl" path="res://system/behavior/behavior_follow.gd" id="1_itg3m"]
+[ext_resource type="Script" uid="uid://r3tn168k2gsw" path="res://system/behavior/area_target_finder.gd" id="2_0iy8g"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_50wqs"]
 radius = 64.0
