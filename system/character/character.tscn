@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://skrlnoimlhsv"]
 
-[ext_resource type="Script" path="res://system/character/character.gd" id="1_mutlb"]
-[ext_resource type="Script" path="res://system/damage/hitbox.gd" id="2_a7as0"]
-[ext_resource type="Script" path="res://system/damage/resource_damage_team.gd" id="3_05lyq"]
+[ext_resource type="Script" uid="uid://j4cw5yyw0k7q" path="res://system/character/character.gd" id="1_mutlb"]
+[ext_resource type="Script" uid="uid://dwudfdl2031m0" path="res://system/damage/hitbox.gd" id="2_a7as0"]
+[ext_resource type="Script" uid="uid://d2tah34ef00am" path="res://system/damage/resource_damage_team.gd" id="3_05lyq"]
 [ext_resource type="Texture2D" uid="uid://btryd5g3oajow" path="res://content/character/Shadow.png" id="4_7icv6"]
-[ext_resource type="Script" path="res://system/character/sprite_character.gd" id="6_s08pp"]
+[ext_resource type="Script" uid="uid://ds5lyqithdpch" path="res://system/character/sprite_character.gd" id="6_s08pp"]
 
 [sub_resource type="Resource" id="Resource_3y32p"]
 script = ExtResource("3_05lyq")

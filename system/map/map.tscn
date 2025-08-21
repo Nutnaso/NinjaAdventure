@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://ck4ncv1wxtff5"]
 
 [ext_resource type="TileSet" uid="uid://tir0rfjtiwma" path="res://content/map/tileset.tres" id="1_3llky"]
-[ext_resource type="Script" path="res://system/map/map.gd" id="1_kj2hq"]
+[ext_resource type="Script" uid="uid://bkrcqys1bplpl" path="res://system/map/map.gd" id="1_kj2hq"]
 [ext_resource type="Texture2D" uid="uid://dwtpv76elqabc" path="res://system/map/map_size_bg.png" id="2_63ctl"]
-[ext_resource type="Script" path="res://system/environment/environment_area.gd" id="9_chgur"]
+[ext_resource type="Script" uid="uid://cgcgs6hbaq34m" path="res://system/environment/environment_area.gd" id="9_chgur"]
 
 [node name="Map" type="Node2D"]
 script = ExtResource("1_kj2hq")

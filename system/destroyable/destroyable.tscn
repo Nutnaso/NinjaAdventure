@@ -1,11 +1,11 @@
 [gd_scene load_steps=12 format=3 uid="uid://b6vodxc0miclw"]
 
-[ext_resource type="Script" path="res://system/destroyable/destroyable.gd" id="1_w1gja"]
-[ext_resource type="Script" path="res://system/stat/life/resource_life.gd" id="2_ogjwx"]
-[ext_resource type="Script" path="res://system/damage/hitbox.gd" id="3_jt54f"]
+[ext_resource type="Script" uid="uid://bru1je1iq2d07" path="res://system/destroyable/destroyable.gd" id="1_w1gja"]
+[ext_resource type="Script" uid="uid://ujk2b3dm74gd" path="res://system/stat/life/resource_life.gd" id="2_ogjwx"]
+[ext_resource type="Script" uid="uid://dwudfdl2031m0" path="res://system/damage/hitbox.gd" id="3_jt54f"]
 [ext_resource type="Texture2D" uid="uid://dgbkuuwc1j8km" path="res://content/particle/particle_rock.png" id="4_af1pe"]
 [ext_resource type="Material" uid="uid://cbc0e23kmqwml" path="res://system/particle/particle_process_explosion.tres" id="4_i466n"]
-[ext_resource type="Script" path="res://system/particle/particle.gd" id="5_tljad"]
+[ext_resource type="Script" uid="uid://dvoljs84jw2em" path="res://system/particle/particle.gd" id="5_tljad"]
 [ext_resource type="Resource" uid="uid://h31w51nsttnc" path="res://content/particle/particle_rock.tres" id="6_ebru0"]
 
 [sub_resource type="Resource" id="Resource_yd1gc"]
