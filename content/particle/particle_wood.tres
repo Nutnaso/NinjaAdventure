@@ -1,6 +1,10 @@
 [gd_resource type="Resource" script_class="ResourceParticle" load_steps=3 format=3 uid="uid://dly47plkpnxad"]
 
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://covc6awnkotdp" path="res://system/particle/resource_particle.gd" id="1_mtbbx"]
+=======
+[ext_resource type="Script" uid="uid://dual8tq0e03y8" path="res://system/particle/resource_particle.gd" id="1_mtbbx"]
+>>>>>>> af5e2bf9371fcfdb510e5d9bd20b38580845d256
 [ext_resource type="Texture2D" uid="uid://tc46xpav16ok" path="res://content/particle/particle_wood.png" id="2_of065"]
 
 [resource]

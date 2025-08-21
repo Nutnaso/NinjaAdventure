@@ -1,7 +1,12 @@
 [gd_scene load_steps=4 format=3 uid="uid://bahejxgq2chrj"]
 
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://drhtos4kyor1x" path="res://system/weapon/weapon.gd" id="1_dhxh8"]
 [ext_resource type="Script" uid="uid://dtk21h8titvhl" path="res://system/damage/damage_area.gd" id="3_0o8xx"]
+=======
+[ext_resource type="Script" uid="uid://e2mwevygatep" path="res://system/weapon/weapon.gd" id="1_dhxh8"]
+[ext_resource type="Script" uid="uid://uoov3s0uvv23" path="res://system/damage/damage_area.gd" id="3_0o8xx"]
+>>>>>>> af5e2bf9371fcfdb510e5d9bd20b38580845d256
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h8xia"]
 size = Vector2(12, 10)
