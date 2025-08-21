@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ResourceParticle" load_steps=3 format=3 uid="uid://cwqdt1vxig3wi"]
 
-[ext_resource type="Script" uid="uid://dual8tq0e03y8" path="res://system/particle/resource_particle.gd" id="1_nohhk"]
+[ext_resource type="Script" uid="uid://d1bjuqvkte1k1" path="res://system/particle/resource_particle.gd" id="1_nohhk"]
 [ext_resource type="Texture2D" uid="uid://b4xd2vlppyawo" path="res://content/particle/particle_pot.png" id="2_legwn"]
 
 [resource]
