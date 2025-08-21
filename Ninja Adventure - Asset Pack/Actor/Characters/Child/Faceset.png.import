@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:Ninja Adventure - Asset Pack/Actor/Characters/Child/Faceset.png.import
-uid="uid://dctqcbl6b8bnb"
+uid="uid://hlx76in5fhx0"
 path="res://.godot/imported/Faceset.png-1c7ff56a4e3c627bbe894c42a26d469c.ctex"
-========
-uid="uid://xrl0jrqqrwpr"
-path="res://.godot/imported/nine_path_6.png-15d305647721bdf03d8c9dec5692586e.ctex"
->>>>>>>> cae1834de9a03ab5f48449908e6386d56e8b319f:theme/nine_path_6.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:Ninja Adventure - Asset Pack/Actor/Characters/Child/Faceset.png.import
 source_file="res://Ninja Adventure - Asset Pack/Actor/Characters/Child/Faceset.png"
 dest_files=["res://.godot/imported/Faceset.png-1c7ff56a4e3c627bbe894c42a26d469c.ctex"]
-========
-source_file="res://theme/nine_path_6.png"
-dest_files=["res://.godot/imported/nine_path_6.png-15d305647721bdf03d8c9dec5692586e.ctex"]
->>>>>>>> cae1834de9a03ab5f48449908e6386d56e8b319f:theme/nine_path_6.png.import
 
 [params]
 
