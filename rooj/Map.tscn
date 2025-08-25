@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnpl4d2rgyrvm"]
+
+[ext_resource type="Texture2D" uid="uid://dwtpv76elqabc" path="res://system/map/map_size_bg.png" id="1_816wd"]
+[ext_resource type="TileSet" uid="uid://tir0rfjtiwma" path="res://content/map/tileset.tres" id="2_e3eon"]
+
+[node name="Map" type="Node2D"]
+
+[node name="ScreenGridRef" type="TextureRect" parent="."]
+auto_translate_mode = 1
+modulate = Color(1, 1, 1, 0.0745098)
+z_index = 3
+offset_left = -1416.0
+offset_top = -950.0
+offset_right = -19.0
+offset_bottom = 196.0
+scale = Vector2(2, 2)
+mouse_filter = 2
+texture = ExtResource("1_816wd")
+stretch_mode = 1
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Node2D"]
+tile_set = ExtResource("2_e3eon")

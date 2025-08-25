@@ -1,4 +1,5 @@
 res://rooj
+res://content/map
 res://system/ui
 res://theme
 res://content/character/pig
@@ -7,7 +8,6 @@ res://content/destroyable
 res://system/destroyable
 res://system
 res://content/character/ninja_blue
-res://content/map
 res://system/map
 res://content/character
 res://content/behavior
