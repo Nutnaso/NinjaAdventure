@@ -1,3 +1,4 @@
+res://
 res://system/ui
 res://theme
 res://content/character/pig
@@ -14,7 +15,6 @@ res://system/behavior
 res://system/input
 res://content/particle
 res://system/particle
-res://
 res://content/team
 res://content/environment/autumn
 res://content/environment
