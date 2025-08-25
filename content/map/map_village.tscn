@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://c83pfkmwxrf3p"]
+[gd_scene load_steps=29 format=3 uid="uid://c83pfkmwxrf3p"]
 
 [ext_resource type="PackedScene" uid="uid://ck4ncv1wxtff5" path="res://system/map/map.tscn" id="1_6r46d"]
 [ext_resource type="Script" uid="uid://05wct67qpx6m" path="res://system/environment/environment_shape.gd" id="2_jff21"]
@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://bheb2v7fdghba" path="res://content/character/samurai_blue/samurai_blue.tscn" id="10_kdwhh"]
 [ext_resource type="AudioStream" uid="uid://c7vlu3uu47bb5" path="res://audio/music/theme_dream.ogg" id="15_4dufa"]
 [ext_resource type="Script" uid="uid://btuct7amjswpc" path="res://system/teleporter/teleporter.gd" id="18_rh3ex"]
+[ext_resource type="TileSet" uid="uid://tir0rfjtiwma" path="res://content/map/tileset.tres" id="19_148tu"]
 
 [sub_resource type="Resource" id="Resource_m4bmw"]
 script = ExtResource("5_u7nr0")
@@ -163,3 +164,6 @@ direction = Vector2(0, -1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Teleporter2" index="1"]
 shape = SubResource("RectangleShape2D_2qsb7")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." index="5"]
+tile_set = ExtResource("19_148tu")

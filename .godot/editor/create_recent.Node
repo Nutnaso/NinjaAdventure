@@ -1,3 +1,5 @@
+Node2D
+TileMapLayer
 ColorRect
 ProgressBar
 CheckBox
@@ -11,5 +13,3 @@ TextEdit
 CanvasLayer
 ItemList
 Button
-VBoxContainer
-Label
