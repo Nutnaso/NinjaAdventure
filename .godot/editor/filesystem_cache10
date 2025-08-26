@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1756191046
+::res://::1756217789
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::8942990127707762129::1756130864::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::4224563771422937500::1756130864::1756131557::1::::<><><>0<>0<>64c7d350af295fa52d2d7aa046a775f2<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 main.gd::GDScript/GDScript::1343217348883858247::1756130864::0::1::::<>Node<><>0<>0<><>::
@@ -43,12 +43,12 @@ environment.tres::Resource/ResourceEnvironment::7907374591822514739::1756196550:
 gradient.tres::GradientTexture1D/GradientTexture1D::8314323315187124832::1756130864::0::1::::<><><>0<>0<><>::
 ::res://content/environment/swamp/::1756196550
 environment.tres::Resource/ResourceEnvironment::4058633743411842415::1756196550::0::1::::<><><>0<>0<><>::uid://bdvl5xcum1mtt::::res://content/environment/swamp/gradient.tres<>uid://bh0aq1er5v5o1::::res://audio/music/theme_swamp.ogg<>uid://dlyvs1vtq6n45::::res://system/environment/resource_environment.gd
-gradient.tres::GradientTexture1D::2641061820232474585::1756196550::0::1::::<><><>0<>0<><>::
-::res://content/map/::1756196993
+gradient.tres::GradientTexture1D/GradientTexture1D::2641061820232474585::1756196550::0::1::::<><><>0<>0<><>::
+::res://content/map/::1756197312
 map_village.tscn::PackedScene/PackedScene::7147796013218110355::1756131717::0::1::::<><><>0<>0<><>::uid://ck4ncv1wxtff5::::res://system/map/map.tscn<>uid://05wct67qpx6m::::res://system/environment/environment_shape.gd<>uid://bx3bdtejr87up::::res://content/environment/swamp/environment.tres<>uid://dkwnklyceey24::::res://content/environment/autumn/environment.tres<>uid://0t0eno7meef2::::res://system/damage/damage_area.gd<>uid://bqb3fwgm61b2b::::res://system/damage/resource_damage.gd<>uid://dlyvs1vtq6n45::::res://system/environment/resource_environment.gd<>uid://ujea2b11dl3n::::res://content/team/player_team.tres<>uid://dvnv45u7vj35n::::res://content/character/pig/pig.tscn<>uid://co5qpuj3hns3e::::res://content/character/ninja_blue/ninja_blue.tscn<>uid://14gxurpdh5qb::::res://system/player_assignor.gd<>uid://xjlbmbimxaaq::::res://content/team/npc_team.tres<>uid://cw76qbrkm15gy::::res://content/character/samurai_green/samurai_green.tscn<>uid://dh4c80m4ixesm::::res://system/behavior/behavior_follow.gd<>uid://c0t84ofbbsv1h::::res://system/behavior/behavior_follow_path.gd<>uid://bheb2v7fdghba::::res://content/character/samurai_blue/samurai_blue.tscn<>uid://c7vlu3uu47bb5::::res://audio/music/theme_dream.ogg<>uid://btuct7amjswpc::::res://system/teleporter/teleporter.gd
-tileset.tres::TileSet::1351180785935369792::1756196550::0::1::::<><><>0<>0<><>::uid://blisphvmuiydg::::res://content/map/tileset_village_abandoned.png<>uid://cfa7eykkf3o07::::res://content/map/tileset_floor.png<>uid://dga8b4mbpf0ch::::res://content/map/tileset_interior_floor.png<>uid://dseocn2by32rs::::res://content/map/tileset_wall_simple.png<>uid://44k1t5e1t2uo::::res://content/map/tileset_animated.png<>uid://dc2otpemqpad2::::res://content/destroyable/crate.tscn<>uid://domrx1cgi35kg::::res://content/destroyable/grass.tscn<>uid://dxma3r6xd3454::::res://content/destroyable/pot.tscn<>uid://c08vcolmx5mnb::::res://rooj/TILESET/SunnysideWorld_Tileset_V0.1.png<>uid://cmhlobvbo5t1u::::res://content/map/TilesetDesert.png
-TilesetDesert.png::CompressedTexture2D::5630251108385697796::1756194050::1756194051::1::::<><><>0<>0<>70764f7b02250685f5ee09279929577b<>res://.godot/imported/TilesetDesert.png-de993374a2d338e06eaf387e0e2b069d.ctex::
-TilesetNature.png::CompressedTexture2D::2712573013594081521::1756196993::1756196994::1::::<><><>0<>0<>6544a257a493b23510d6ca156a953b9d<>res://.godot/imported/TilesetNature.png-774fec56ea74706a0e2b7ba2f4d09e2c.ctex::
+tileset.tres::TileSet/TileSet::1351180785935369792::1756197312::0::1::::<><><>0<>0<><>::uid://blisphvmuiydg::::res://content/map/tileset_village_abandoned.png<>uid://cfa7eykkf3o07::::res://content/map/tileset_floor.png<>uid://dga8b4mbpf0ch::::res://content/map/tileset_interior_floor.png<>uid://dseocn2by32rs::::res://content/map/tileset_wall_simple.png<>uid://44k1t5e1t2uo::::res://content/map/tileset_animated.png<>uid://dc2otpemqpad2::::res://content/destroyable/crate.tscn<>uid://domrx1cgi35kg::::res://content/destroyable/grass.tscn<>uid://dxma3r6xd3454::::res://content/destroyable/pot.tscn<>uid://c08vcolmx5mnb::::res://rooj/TILESET/SunnysideWorld_Tileset_V0.1.png<>uid://cmhlobvbo5t1u::::res://content/map/TilesetDesert.png<>uid://bev8xfq0rg0i4::::res://content/map/TilesetNature.png
+TilesetDesert.png::CompressedTexture2D/CompressedTexture2D::5630251108385697796::1756194050::1756194051::1::::<><><>0<>0<>70764f7b02250685f5ee09279929577b<>res://.godot/imported/TilesetDesert.png-de993374a2d338e06eaf387e0e2b069d.ctex::
+TilesetNature.png::CompressedTexture2D/CompressedTexture2D::2712573013594081521::1756196993::1756196994::1::::<><><>0<>0<>6544a257a493b23510d6ca156a953b9d<>res://.godot/imported/TilesetNature.png-774fec56ea74706a0e2b7ba2f4d09e2c.ctex::
 tileset_animated.png::CompressedTexture2D/CompressedTexture2D::2095998065444914906::1756130864::1756131557::1::::<><><>0<>0<>8c20d0aa7eea6824f777d8ffeb94241c<>res://.godot/imported/tileset_animated.png-bcb2742920f79d2f18e6308195dfc06b.ctex::
 tileset_floor.png::CompressedTexture2D/CompressedTexture2D::5125736948991111578::1756130864::1756131557::1::::<><><>0<>0<>00b9f493a644d15a1d74e42e84be2449<>res://.godot/imported/tileset_floor.png-fa2fdca2c63daaa75a693004ea564356.ctex::
 tileset_interior_floor.png::CompressedTexture2D/CompressedTexture2D::7582402101243208807::1756130864::1756131557::1::::<><><>0<>0<>bd6cd2f71ef6849813eba6677c31bf3b<>res://.godot/imported/tileset_interior_floor.png-74215afc33b22b3e9b7abecfe24d4033.ctex::
@@ -99,13 +99,19 @@ sprite.png::CompressedTexture2D/CompressedTexture2D::7759928146068767459::175613
 งาน  jame.txt::TextFile/TextFile::-1::1756131717::0::1::::<><><>0<>0<><>::
 ::res://pluem/::1756131717
 งาน  pluem.txt::TextFile/TextFile::-1::1756131717::0::1::::<><><>0<>0<><>::
-::res://rooj/::1756196549
-Map.tscn::PackedScene::5716981875996346394::1756196549::0::1::::<><><>0<>0<><>::uid://dwtpv76elqabc::::res://system/map/map_size_bg.png<>uid://tir0rfjtiwma::::res://content/map/tileset.tres
+::res://rooj/::1756217789
+Map.tscn::PackedScene/PackedScene::5716981875996346394::1756211536::0::1::::<><><>0<>0<><>::uid://dwtpv76elqabc::::res://system/map/map_size_bg.png<>uid://tir0rfjtiwma::::res://content/map/tileset.tres
 root.tscn::PackedScene/PackedScene::5091632119446357149::1756132318::0::1::::<><><>0<>0<><>::
 งาน  rooj.txt::TextFile/TextFile::-1::1756131717::0::1::::<><><>0<>0<><>::
 ::res://rooj/roojasktest1/::1756132142
-::res://rooj/TILESET/::1756138217
+::res://rooj/TILESET/::1756217789
+exterior.png::CompressedTexture2D/CompressedTexture2D::7755967419293580083::1756216105::1756216105::1::::<><><>0<>0<>caaa224747e3bae4349201aa4aa9ba04<>res://.godot/imported/exterior.png-ba5b69debc7286d3ef645099d7f3fba2.ctex::
+full.png::CompressedTexture2D::5752941896480123899::1756216348::1756217790::1::::<><><>0<>0<>fd94b834a20bf570a7ffb3b451b9b90a<>res://.godot/imported/full.png-2e0e5cc19d48587c08ac8fc1852786e0.ctex::
+Gemini_Generated_Image_5wu0wz5wu0wz5wu0.png::CompressedTexture2D/CompressedTexture2D::8041981245703454168::1756214679::1756216229::1::::<><><>0<>0<>9690d23c7a294e29a0a3be7bfce4086d<>res://.godot/imported/Gemini_Generated_Image_5wu0wz5wu0wz5wu0.png-892bd33504df3cd23359b21c28bffde5.ctex::
+Objects.png::CompressedTexture2D/CompressedTexture2D::8362216887096509777::1756216220::1756216221::1::::<><><>0<>0<>1061d478b69f0d9881bba80bd98a1eea<>res://.godot/imported/Objects.png-88b1a5285ffa090613ca6aa36bb91164.ctex::
+spr_tileset_sunnysideworld.png::CompressedTexture2D/CompressedTexture2D::1971228277865338492::1756215240::1756215240::1::::<><><>0<>0<>9784c26936a5ecabbf67c5603aba4727<>res://.godot/imported/spr_tileset_sunnysideworld.png-41738794c6b6388c5a00497cc644affa.ctex::
 SunnysideWorld_Tileset_V0.1.png::CompressedTexture2D/CompressedTexture2D::6596966305553794699::1756138217::1756138217::1::::<><><>0<>0<>2af6106bb942c7de43b750c104bfe374<>res://.godot/imported/SunnysideWorld_Tileset_V0.1.png-f31acdaf74121a790470236f6701ce76.ctex::
+supplies_objects.png::CompressedTexture2D/CompressedTexture2D::2454803485800830301::1756216312::1756216312::1::::<><><>0<>0<>d398a5ecc6f2b6dae66f644114f4cbb2<>res://.godot/imported/supplies_objects.png-15debe36d4e8eb22e71c58bf33893627.ctex::
 ::res://system/::1756131717
 music.gd::GDScript/GDScript::28702568283541021::1756130864::0::1::::<>AudioStreamPlayer<><>0<>0<><>::
 player_assignor.gd::GDScript/GDScript::1885183342087515553::1756130864::0::1::::<>Node<><>0<>0<><>::
@@ -131,12 +137,12 @@ icon_character.png::CompressedTexture2D/CompressedTexture2D::956047147311152035:
 life_bar.gd::GDScript/GDScript::4607055145929741104::1756130864::0::1::::<>TextureProgressBar<><>0<>0<><>::
 resource_character.gd::GDScript/GDScript::7431170090191082728::1756130864::0::1::::ResourceCharacter<>Resource<><>0<>0<><>::
 sprite_character.gd::GDScript/GDScript::1194852566475948443::1756130864::0::1::::SpriteCharacter<>Sprite2D<><>0<>0<><>::
-::res://system/color_correction/::1756196550
+::res://system/color_correction/::1756211536
 color_correction.gd::GDScript/GDScript::6715419219307595957::1756130864::0::1::::ColorCorrection<>ColorRect<><>0<>1<><>::
 gradient_neutral.tres::GradientTexture1D/GradientTexture1D::6030850697513887018::1756130864::0::1::::<><><>0<>0<><>::
 icon_color_correction.png::CompressedTexture2D/CompressedTexture2D::5380943723361326470::1756130864::1756131558::1::::<><><>0<>0<>a4769ad7783303c118724a723f836726<>res://.godot/imported/icon_color_correction.png-571e667fcd6c5dd0f4df6f50967aa138.ctex::
-material.tres::ShaderMaterial::9194693162360903453::1756196550::0::1::::<><><>0<>0<><>::uid://bymwj58r6eo0w::::res://system/color_correction/shader_color_correction.gdshader
-shader_color_correction.gdshader::Shader::4097078937533654800::1756196550::0::1::::<><><>0<>0<><>::
+material.tres::ShaderMaterial/ShaderMaterial::9194693162360903453::1756196550::0::1::::<><><>0<>0<><>::uid://bymwj58r6eo0w::::res://system/color_correction/shader_color_correction.gdshader
+shader_color_correction.gdshader::Shader/Shader::4097078937533654800::1756211536::0::1::::<><><>0<>0<><>::
 ::res://system/damage/::1756131717
 damage_area.gd::GDScript/GDScript::1795470042173671861::1756130864::0::1::::DamageArea<>Area2D<><>0<>0<><>::
 hitbox.gd::GDScript/GDScript::3924660085356038084::1756130864::0::1::::Hitbox<>Area2D<><>0<>1<><>::
@@ -178,10 +184,10 @@ map_size_bg.png::CompressedTexture2D/CompressedTexture2D::8743589773839862932::1
 icon_particle.png::CompressedTexture2D/CompressedTexture2D::4058171637959446931::1756130864::1756131557::1::::<><><>0<>0<>49834ece8064a76b47724436b09bc573<>res://.godot/imported/icon_particle.png-d11fd2983edc7338dd384f0296468a2d.ctex::
 icon_resource_particle.png::CompressedTexture2D/CompressedTexture2D::7410659625010550103::1756130864::1756131557::1::::<><><>0<>0<>44cc019fba9ba0c69531212ba496609a<>res://.godot/imported/icon_resource_particle.png-37c7121339fbb19d1f03a7cede33c590.ctex::
 particle.gd::GDScript/GDScript::5475155399218299441::1756130864::0::1::::Particle<>GPUParticles2D<><>0<>1<><>::
-particle_process_explosion.tres::ParticleProcessMaterial::4848685496383157755::1756196549::0::1::::<><><>0<>0<><>::
+particle_process_explosion.tres::ParticleProcessMaterial/ParticleProcessMaterial::4848685496383157755::1756196549::0::1::::<><><>0<>0<><>::
 resource_particle.gd::GDScript/GDScript::1661909872141136851::1756130864::0::1::::ResourceParticle<>Resource<><>0<>1<><>::
-::res://system/shader/::1756196550
-shader_moving_texture.gdshader::Shader::1965576263190478248::1756196550::0::1::::<><><>0<>0<><>::
+::res://system/shader/::1756211536
+shader_moving_texture.gdshader::Shader/Shader::1965576263190478248::1756211536::0::1::::<><><>0<>0<><>::
 ::res://system/stat/::1756131717
 icon.png::CompressedTexture2D/CompressedTexture2D::7560185201234309621::1756130864::1756131557::1::::<><><>0<>0<>d729d54d52eab3fd02fca159d375ae1a<>res://.godot/imported/icon.png-8c79da9d3fd428723d88fbb66e821c1e.ctex::
 resource_stat.gd::GDScript/GDScript::6259721509750951037::1756130864::0::1::::ResourceStat<>Resource<><>0<>0<><>::
@@ -240,7 +246,7 @@ nine_path_focus.png::CompressedTexture2D/CompressedTexture2D::779322455510079437
 nine_path_panel.png::CompressedTexture2D/CompressedTexture2D::2584262391692108425::1756130864::1756131557::1::::<><><>0<>0<>0b5416af30bc14df2990d8982004eeec<>res://.godot/imported/nine_path_panel.png-3bae0e63d342377cb2523f41c9aa33fd.ctex::
 slider_progress.png::CompressedTexture2D/CompressedTexture2D::8625362052897565428::1756130864::1756131557::1::::<><><>0<>0<>13ffa24d0ee8501d2682065afcc99185<>res://.godot/imported/slider_progress.png-b1d8a5541b136c6ce20cca48121369ac.ctex::
 slider_progress_hover.png::CompressedTexture2D/CompressedTexture2D::1825033446275370291::1756130864::1756131557::1::::<><><>0<>0<>b239cd9cea14f654c0da5932dc8b7887<>res://.godot/imported/slider_progress_hover.png-7f43ce7e049fdc52bf6f76222d9bac33.ctex::
-theme_1.tres::Theme::8834549906444816079::1756196550::0::1::::<><><>0<>0<><>::uid://bxm2dwu0cke1x::::res://theme/font_normal.ttf<>uid://hidj6lx0rkkr::::res://theme/theme_1/button_disabled.png<>uid://caqf1ry8xi30l::::res://theme/theme_1/button_normal.png<>uid://cglvwx3xsytvi::::res://theme/theme_1/button_hover.png<>uid://1ui0v7ylcpva::::res://theme/theme_1/button_pressed.png<>uid://ce2wblcfp7a0x::::res://theme/theme_1/h_slidder_grabber.png<>uid://djbdjf56yggko::::res://theme/theme_1/nine_path_focus.png<>uid://bbtyp4xub580i::::res://theme/theme_1/checked.png<>uid://bc23oof5231tl::::res://theme/theme_1/nine_path_panel.png<>uid://c36uibovwf32o::::res://theme/theme_1/nine_path_bg.png<>uid://ctr0uw5uwlqpo::::res://theme/theme_1/h_slidder_grabber_disabled.png<>uid://cws6dhnhonhfk::::res://theme/theme_1/h_slidder_grabber_hover.png<>uid://bghtvuadarvib::::res://theme/theme_1/unchecked.png<>uid://c8qnjoulombgn::::res://theme/theme_1/checked_disabled.png<>uid://du5gpnqbdt5to::::res://theme/theme_1/slider_progress.png<>uid://1acbfs7wnofj::::res://theme/theme_1/slider_progress_hover.png<>uid://dhhip5ygmi78x::::res://theme/theme_1/unchecked_disabled.png<>uid://4u30n44slo8h::::res://theme/theme_1/v_slidder_grabber.png<>uid://c8k8yvxejwqy1::::res://theme/theme_1/v_slidder_grabber_hover.png<>uid://g6d7n32878wy::::res://theme/theme_1/nine_path_bg_2.png<>uid://b6nfgwugugveh::::res://theme/theme_1/v_slidder_grabber_disabled.png
+theme_1.tres::Theme/Theme::8834549906444816079::1756196550::0::1::::<><><>0<>0<><>::uid://bxm2dwu0cke1x::::res://theme/font_normal.ttf<>uid://hidj6lx0rkkr::::res://theme/theme_1/button_disabled.png<>uid://caqf1ry8xi30l::::res://theme/theme_1/button_normal.png<>uid://cglvwx3xsytvi::::res://theme/theme_1/button_hover.png<>uid://1ui0v7ylcpva::::res://theme/theme_1/button_pressed.png<>uid://ce2wblcfp7a0x::::res://theme/theme_1/h_slidder_grabber.png<>uid://djbdjf56yggko::::res://theme/theme_1/nine_path_focus.png<>uid://bbtyp4xub580i::::res://theme/theme_1/checked.png<>uid://bc23oof5231tl::::res://theme/theme_1/nine_path_panel.png<>uid://c36uibovwf32o::::res://theme/theme_1/nine_path_bg.png<>uid://ctr0uw5uwlqpo::::res://theme/theme_1/h_slidder_grabber_disabled.png<>uid://cws6dhnhonhfk::::res://theme/theme_1/h_slidder_grabber_hover.png<>uid://bghtvuadarvib::::res://theme/theme_1/unchecked.png<>uid://c8qnjoulombgn::::res://theme/theme_1/checked_disabled.png<>uid://du5gpnqbdt5to::::res://theme/theme_1/slider_progress.png<>uid://1acbfs7wnofj::::res://theme/theme_1/slider_progress_hover.png<>uid://dhhip5ygmi78x::::res://theme/theme_1/unchecked_disabled.png<>uid://4u30n44slo8h::::res://theme/theme_1/v_slidder_grabber.png<>uid://c8k8yvxejwqy1::::res://theme/theme_1/v_slidder_grabber_hover.png<>uid://g6d7n32878wy::::res://theme/theme_1/nine_path_bg_2.png<>uid://b6nfgwugugveh::::res://theme/theme_1/v_slidder_grabber_disabled.png
 unchecked.png::CompressedTexture2D/CompressedTexture2D::2823196564938281293::1756130864::1756131557::1::::<><><>0<>0<>5fa47e35fa2bcc4ae1c2d7cda8f8019a<>res://.godot/imported/unchecked.png-2f8e9fe02a1cfe4a72b17a6e39efdce2.ctex::
 unchecked_disabled.png::CompressedTexture2D/CompressedTexture2D::7665548736739464889::1756130864::1756131557::1::::<><><>0<>0<>07c72e2316269d76da09383ae47dd00a<>res://.godot/imported/unchecked_disabled.png-809ea42a465f186bc90cb90a814b82a4.ctex::
 v_slidder_grabber.png::CompressedTexture2D/CompressedTexture2D::2078509470174228985::1756130864::1756131557::1::::<><><>0<>0<>4f416f9301a41149f44d9ace35b9d73a<>res://.godot/imported/v_slidder_grabber.png-92b7bbd13966955f76a7bc8873f2a5e8.ctex::
