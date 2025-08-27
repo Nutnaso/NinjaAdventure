@@ -1,4 +1,10 @@
 res://
+res://jame/dataJamie/นางเอก-20250827T044812Z-1-001/นางเอก/Woman/SeparateAnim
+res://jame/dataJamie/GiantRedSamurai-20250827T045143Z-1-001/GiantRedSamurai
+res://jame/dataJamie/GiantBamboo-20250827T045133Z-1-001/GiantBamboo
+res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantSpirit
+res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantFrog
+res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantFlam
 res://system/ui
 res://theme
 res://content/character/pig
@@ -14,9 +20,3 @@ res://content/behavior
 res://system/behavior
 res://system/input
 res://content/particle
-res://system/particle
-res://content/team
-res://content/environment/autumn
-res://content/environment
-res://system/color_correction
-res://system/environment
