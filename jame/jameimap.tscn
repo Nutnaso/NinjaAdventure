@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 [gd_scene format=3 uid="uid://hvvhemdd0mu0"]
+=======
+[gd_scene load_steps=0 format=3 uid="uid://erkbng8ftpkc"]
+>>>>>>> Jame
 
 [node name="Jameimap" type="Node2D"]
