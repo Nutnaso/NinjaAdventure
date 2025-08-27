@@ -1,5 +1,5 @@
-Node2D
 TileMapLayer
+Node2D
 ColorRect
 ProgressBar
 CheckBox
@@ -12,4 +12,3 @@ LineEdit
 TextEdit
 CanvasLayer
 ItemList
-Button
