@@ -33,6 +33,7 @@ offset_right = 1216.0
 offset_bottom = 208.0
 
 [node name="Label2" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
 offset_left = 1120.0
 offset_top = 176.0
 offset_right = 1201.0
