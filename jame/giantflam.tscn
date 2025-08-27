@@ -1,0 +1,87 @@
+[gd_scene load_steps=13 format=3 uid="uid://erkbng8ftpkc"]
+
+[ext_resource type="Texture2D" uid="uid://bnwq4keu5abjf" path="res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantFlam/Hit.png" id="1_580e2"]
+[ext_resource type="Texture2D" uid="uid://bh1i8am176r7" path="res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantFlam/Idle.png" id="2_i66q8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7i6n"]
+atlas = ExtResource("1_580e2")
+region = Rect2(0, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nc3kj"]
+atlas = ExtResource("1_580e2")
+region = Rect2(50, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_htbxg"]
+atlas = ExtResource("1_580e2")
+region = Rect2(100, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkweb"]
+atlas = ExtResource("2_i66q8")
+region = Rect2(0, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i0k8n"]
+atlas = ExtResource("2_i66q8")
+region = Rect2(50, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8odqy"]
+atlas = ExtResource("2_i66q8")
+region = Rect2(100, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccih2"]
+atlas = ExtResource("2_i66q8")
+region = Rect2(150, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ki2d"]
+atlas = ExtResource("2_i66q8")
+region = Rect2(200, 0, 50, 50)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pcgva"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i7i6n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nc3kj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_htbxg")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wkweb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0k8n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8odqy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccih2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ki2d")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xsjli"]
+radius = 24.0
+height = 48.0
+
+[node name="Giantflam" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_pcgva")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_xsjli")
