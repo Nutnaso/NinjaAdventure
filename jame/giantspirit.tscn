@@ -1,0 +1,88 @@
+[gd_scene load_steps=13 format=3 uid="uid://btpbkwyh7qrky"]
+
+[ext_resource type="Texture2D" uid="uid://b780hlt331ykr" path="res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantSpirit/Hit.png" id="1_7haws"]
+[ext_resource type="Texture2D" uid="uid://dlyqhm8x8ue51" path="res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantSpirit/Idle.png" id="2_m6e0p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_001ot"]
+atlas = ExtResource("1_7haws")
+region = Rect2(0, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dt6gy"]
+atlas = ExtResource("1_7haws")
+region = Rect2(50, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thl1v"]
+atlas = ExtResource("1_7haws")
+region = Rect2(100, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2gns"]
+atlas = ExtResource("2_m6e0p")
+region = Rect2(0, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2rau"]
+atlas = ExtResource("2_m6e0p")
+region = Rect2(50, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3tq4d"]
+atlas = ExtResource("2_m6e0p")
+region = Rect2(100, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hc80e"]
+atlas = ExtResource("2_m6e0p")
+region = Rect2(150, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vy6km"]
+atlas = ExtResource("2_m6e0p")
+region = Rect2(200, 0, 50, 50)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0oxxk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_001ot")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dt6gy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_thl1v")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2gns")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p2rau")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3tq4d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hc80e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vy6km")
+}],
+"loop": true,
+"name": &"idel",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fg82u"]
+radius = 24.0
+height = 50.0
+
+[node name="giantspirit" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0oxxk")
+animation = &"hit"
+frame_progress = 0.806778
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_fg82u")
