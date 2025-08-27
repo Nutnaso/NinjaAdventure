@@ -1,3 +1,40 @@
-[gd_scene format=3 uid="uid://ceg5er2mn6hl"]
+[gd_scene load_steps=2 format=3 uid="uid://ceg5er2mn6hl"]
+
+[ext_resource type="Script" uid="uid://bop2d71n1jubi" path="res://nut/canvas_layer.gd" id="1_c8fpa"]
 
 [node name="dialog" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_c8fpa")
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+offset_left = 32.0
+offset_top = 480.0
+offset_right = 1248.0
+offset_bottom = 688.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 16.0
+offset_right = 1168.0
+offset_bottom = 64.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 64.0
+offset_right = 1200.0
+offset_bottom = 200.0
+
+[node name="Button" type="Button" parent="CanvasLayer/Panel"]
+modulate = Color(1, 1, 1, 0.333333)
+layout_mode = 0
+offset_right = 1216.0
+offset_bottom = 208.0
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel"]
+offset_left = 1120.0
+offset_top = 176.0
+offset_right = 1201.0
+offset_bottom = 208.0
+text = "กดเพื่อไปต่อ"

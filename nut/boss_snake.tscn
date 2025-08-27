@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcdfclsk0a671"]
+
+[ext_resource type="Script" uid="uid://dyksiw2040ef7" path="res://nut/boss_snake.gd" id="1_h4rsx"]
+[ext_resource type="Texture2D" uid="uid://6ejdbtpsng1l" path="res://nut/Head.png" id="4_2okyu"]
+
+[node name="SnakeBoss" type="Node2D"]
+script = ExtResource("1_h4rsx")
+
+[node name="Head" type="Sprite2D" parent="."]
+position = Vector2(0, -32)
+texture = ExtResource("4_2okyu")
+
+[node name="BodyContainer" type="Node2D" parent="."]

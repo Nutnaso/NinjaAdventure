@@ -1,7 +1,20 @@
-[gd_scene load_steps=3 format=4 uid="uid://cnpl4d2rgyrvm"]
+[gd_scene load_steps=10 format=4 uid="uid://cnpl4d2rgyrvm"]
 
 [ext_resource type="Texture2D" uid="uid://dwtpv76elqabc" path="res://system/map/map_size_bg.png" id="1_816wd"]
 [ext_resource type="TileSet" uid="uid://tir0rfjtiwma" path="res://content/map/tileset.tres" id="2_e3eon"]
+[ext_resource type="PackedScene" uid="uid://co5qpuj3hns3e" path="res://content/character/ninja_blue/ninja_blue.tscn" id="3_agxvt"]
+[ext_resource type="Script" uid="uid://14gxurpdh5qb" path="res://system/player_assignor.gd" id="4_fw331"]
+[ext_resource type="Script" uid="uid://0t0eno7meef2" path="res://system/damage/damage_area.gd" id="5_lb1fl"]
+[ext_resource type="Script" uid="uid://bqb3fwgm61b2b" path="res://system/damage/resource_damage.gd" id="6_2udgf"]
+[ext_resource type="Resource" uid="uid://ujea2b11dl3n" path="res://content/team/player_team.tres" id="7_krt0o"]
+
+[sub_resource type="Resource" id="Resource_da814"]
+script = ExtResource("6_2udgf")
+amount = 1
+push_force = 0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bwcrc"]
+radius = 16.0312
 
 [node name="Map" type="Node2D"]
 
@@ -9,10 +22,10 @@
 auto_translate_mode = 1
 modulate = Color(1, 1, 1, 0.0745098)
 z_index = 3
-offset_left = -1416.0
-offset_top = -950.0
-offset_right = 584.0
-offset_bottom = 196.0
+offset_left = -1248.0
+offset_top = -832.0
+offset_right = 752.0
+offset_bottom = 314.0
 scale = Vector2(2, 2)
 mouse_filter = 2
 texture = ExtResource("1_816wd")
@@ -48,3 +61,22 @@ tile_set = ExtResource("2_e3eon")
 [node name="FloorDetail" type="TileMapLayer" parent="Node2D"]
 tile_map_data = PackedByteArray("AADz//z/BwARAAsAAAD2/wIABwASAAsAAADt//j/BwATAAsAAADh/wEABwAJAAkAAADi/wIABwAIAAkAAADg/wQABwAIAAkAAADj//j/BwAIAAkAAADl//n/BwAIAAkAAADs//b/BwAIAAkAAADb////BwAJAAkAAADf//b/BwAJAAkAAADz/wQABwAJAAkAAAABAAIAAAAEAAUAAAAIAPv/AAAEAAUAAAAEAPr/AAAEAAUAAAAQAPn/AAAEAAUAAAALAAIAAAAFAAUAAAARAAIAAAAFAAUAAAAFAAIAAAAFAAUAAAAEAPv/AAAFAAUAAAAmAPj/CAAEAAsAAAAnAPj/CAAEAAsAAAAnAPn/CAAEAAsAAAAoAPn/CAAEAAsAAAAoAPj/CAAEAAsAAAApAPj/CAAEAAsAAAApAPn/CAAEAAsAAAAmAPn/CAAEAAsAAAApAP//CAAEAAsAAAAqAP//CAAEAAsAAAAqAAAACAAEAAsAAAApAAAACAAEAAsAAAAuAP3/CAAEAAsAAAAvAPz/CAAEAAsAAAAvAP3/CAAEAAsAAAAvAPb/CAAEAAsAAAAvAPX/CAAEAAsAAAAwAPX/CAAEAAsAAAAwAPb/CAAEAAsAAAArAAMACAAEAAsAAAArAAIACAABAAsAAAAsAAIACAABAAsAAAAvAAIACAAAAAsAAAAmAPv/CAAFAAkAAAArAPj/CAAFAAkAAAAjABQACAABAAsAAAAvABQACAABAAsAAAAdABUACAADAAsAAAAfABEACAADAAsAAAAaABMACAAAAAsAAAAwABEACAAAAAsAAAAmABAACAAJAAoAAAAtABAACAAJAAoAAAA2ABEACAAJAAoAAAA4ABEACAAJAAsAAAA6ABQACAAJAAsAAAA7ABQACAAJAAsAAAAsABQACAAJAAsAAAAmABQACAAKAAoAAAApABgACAAKAAoAAAAoABgACAAKAAoAAAAhAAwACAAKAAoAAAAlABQACAAGAAsAAAApAA4ACAAGAAsAAAAsAA4ACAAGAAsAAAADABQACAAEAAkAAAAEABQACAAEAAkAAAAKABAACAAEAAkAAAAFABAACAAFAAkAAAAEAA8ACAAFAAkAAAAPABIACAAEAAkAAAAUABEACAAEAAkAAAAJABQACAAEAAkAAAAKABMACAAEAAkAAAAJAA4ACAAEAAkAAABNAA8ACAAKAAwAAABOABQACAAKAAwAAABLABIACAAIAA0AAABMABIACAAJAA0AAABQAA4ACAAJAA0AAABLAA0ACAAKAA0AAABEABkACAAIAA0AAABBABkACAAIAA0AAABGABQACAAIAA0AAABFABQACAAIAA0AAABFABEACAAJAA0AAABDABEACAAJAA0AAAA=")
 tile_set = ExtResource("2_e3eon")
+
+[node name="NinjaBlue" parent="." instance=ExtResource("3_agxvt")]
+position = Vector2(-752, 16)
+
+[node name="PlayerAssignor" type="Node" parent="NinjaBlue"]
+script = ExtResource("4_fw331")
+
+[node name="DamageArea" type="Area2D" parent="NinjaBlue"]
+script = ExtResource("5_lb1fl")
+damage = SubResource("Resource_da814")
+team = ExtResource("7_krt0o")
+metadata/_edit_lock_ = true
+
+[node name="DamageShape" type="CollisionShape2D" parent="NinjaBlue/DamageArea"]
+shape = SubResource("CircleShape2D_bwcrc")
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" type="Camera2D" parent="NinjaBlue"]
+zoom = Vector2(4, 4)
