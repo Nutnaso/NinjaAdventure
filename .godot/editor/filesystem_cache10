@@ -1,10 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< HEAD
 ::res://::1756292124
 default_bus_layout.tres::AudioBusLayout::8942990127707762129::1713531676::0::1::::<><><>0<>0<><>::
 dialog.json::JSON::-1::1756291952::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::4224563771422937500::1706902870::1755951468::1::::<><><>0<>0<>64c7d350af295fa52d2d7aa046a775f2<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 main.gd::GDScript::1343217348883858247::1713456762::0::1::::<>Node<><>0<>0<><>::
 main.tscn::PackedScene::3580313518306810492::1756133514::0::1::::<><><>0<>0<><>::uid://tewugcrr55i6::::res://main.gd
+=======
+::res://::1756292267
+default_bus_layout.tres::AudioBusLayout::8942990127707762129::1713531676::0::1::::<><><>0<>0<><>::
+icon.png::CompressedTexture2D/CompressedTexture2D::4224563771422937500::1706902870::1755951468::1::::<><><>0<>0<>64c7d350af295fa52d2d7aa046a775f2<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+main.gd::GDScript::1343217348883858247::1713456762::0::1::::<>Node<><>0<>0<><>::
+main.tscn::PackedScene::3580313518306810492::1756292152::0::1::::<><><>0<>0<><>::uid://tewugcrr55i6::::res://main.gd
+>>>>>>> Rooj
 README.md::TextFile::-1::1755951147::0::1::::<><><>0<>0<><>::
 world.gd::GDScript::7332551426114045062::1713459214::0::1::::<>Node2D<><>0<>0<><>::
 world.tscn::PackedScene::7039237387663873040::1756291953::0::1::::<><><>0<>0<><>::uid://dcp7byujo6jsg::::res://world.gd<>uid://c83pfkmwxrf3p::::res://content/map/map_village.tscn<>uid://uditl1ns5wqe::::res://content/weapon/club/club.tres<>uid://btoqgi77hfnrw::::res://system/camera/camera_grid.gd<>uid://bs4uxpqfesgko::::res://system/environment/fx/rain.png<>uid://b6qbpkjaljvvr::::res://system/environment/fx/snow.png<>uid://d0kl1xfdvdsjg::::res://system/environment/fx/rain_on_floor.png<>uid://n5yysgdn7cb::::res://system/music.gd<>uid://c8h0vkd6dugv::::res://system/environment/fx/cloud.png<>uid://dd2kmn7tta5gu::::res://system/environment/fx/leaf.png<>uid://dambir12xmo0k::::res://system/environment/fog.gd<>uid://cpcojki7owcjg::::res://system/environment/fx/raylight.png<>uid://ck8bsyolnkr5h::::res://system/ui/player_ui.tscn<>uid://3ae0vqrunra3::::res://system/shader/shader_moving_texture.gdshader<>uid://dxic1avnc53ct::::res://system/environment/fx/fog.png<>uid://d1m7ujhxkklan::::res://system/transition/transition.gd<>uid://d388iuq2hfgth::::res://system/color_correction/material.tres<>uid://c2w88di11mw2h::::res://system/color_correction/color_correction.gd
@@ -39,6 +47,7 @@ grass.tscn::PackedScene::8167753026178467698::1755951479::0::1::::<><><>0<>0<><>
 pot.png::CompressedTexture2D/CompressedTexture2D::8329171638957905055::1707056174::1755951469::1::::<><><>0<>0<>1892890ada27cf5da168918c9ec599a4<>res://.godot/imported/pot.png-3587e4bfb97d11bfaf8a4d1d72201852.ctex::
 pot.tscn::PackedScene::8798428931868150589::1755951479::0::1::::<><><>0<>0<><>::uid://b6vodxc0miclw::::res://system/destroyable/destroyable.tscn<>uid://cqgr716yojk2q::::res://system/stat/life/resource_life.gd<>uid://dqwyifoorh3t8::::res://content/destroyable/pot.png<>uid://b4xd2vlppyawo::::res://content/particle/particle_pot.png<>uid://cwqdt1vxig3wi::::res://content/particle/particle_pot.tres
 ::res://content/environment/::1755951331
+<<<<<<< HEAD
 ::res://content/environment/autumn/::1756291939
 environment.tres::Resource/ResourceEnvironment::7907374591822514739::1756291939::0::1::::<><><>0<>0<><>::uid://dlyvs1vtq6n45::::res://system/environment/resource_environment.gd
 gradient.tres::GradientTexture1D::8314323315187124832::1713529073::0::1::::<><><>0<>0<><>::
@@ -49,6 +58,17 @@ gradient.tres::GradientTexture1D::2641061820232474585::1756291939::0::1::::<><><
 map_test.tscn::PackedScene::2047718159120798742::1756291952::0::1::::<><><>0<>0<><>::uid://dwtpv76elqabc::::res://system/map/map_size_bg.png<>uid://tir0rfjtiwma::::res://content/map/tileset.tres
 map_village.tscn::PackedScene::7147796013218110355::1756291952::0::1::::<><><>0<>0<><>::uid://ck4ncv1wxtff5::::res://system/map/map.tscn<>uid://05wct67qpx6m::::res://system/environment/environment_shape.gd<>uid://bx3bdtejr87up::::res://content/environment/swamp/environment.tres<>uid://dkwnklyceey24::::res://content/environment/autumn/environment.tres<>uid://0t0eno7meef2::::res://system/damage/damage_area.gd<>uid://bqb3fwgm61b2b::::res://system/damage/resource_damage.gd<>uid://dlyvs1vtq6n45::::res://system/environment/resource_environment.gd<>uid://ujea2b11dl3n::::res://content/team/player_team.tres<>uid://dvnv45u7vj35n::::res://content/character/pig/pig.tscn<>uid://co5qpuj3hns3e::::res://content/character/ninja_blue/ninja_blue.tscn<>uid://14gxurpdh5qb::::res://system/player_assignor.gd<>uid://xjlbmbimxaaq::::res://content/team/npc_team.tres<>uid://cw76qbrkm15gy::::res://content/character/samurai_green/samurai_green.tscn<>uid://dh4c80m4ixesm::::res://system/behavior/behavior_follow.gd<>uid://c0t84ofbbsv1h::::res://system/behavior/behavior_follow_path.gd<>uid://bheb2v7fdghba::::res://content/character/samurai_blue/samurai_blue.tscn<>uid://c7vlu3uu47bb5::::res://audio/music/theme_dream.ogg<>uid://btuct7amjswpc::::res://system/teleporter/teleporter.gd<>uid://tir0rfjtiwma::::res://content/map/tileset.tres
 tileset.tres::TileSet::1351180785935369792::1756291952::0::1::::<><><>0<>0<><>::uid://blisphvmuiydg::::res://content/map/tileset_village_abandoned.png<>uid://cfa7eykkf3o07::::res://content/map/tileset_floor.png<>uid://dga8b4mbpf0ch::::res://content/map/tileset_interior_floor.png<>uid://3c43vbuvu3gq::::res://rooj/TILESET/spr_tileset_sunnysideworld.png<>uid://dseocn2by32rs::::res://content/map/tileset_wall_simple.png<>uid://dreyqw5q5qte4::::res://rooj/TILESET/Objects.png<>uid://44k1t5e1t2uo::::res://content/map/tileset_animated.png<>uid://dirbwdw3djv4n::::res://rooj/TILESET/exterior.png<>uid://dc2otpemqpad2::::res://content/destroyable/crate.tscn<>uid://ba8eiwrc1lwan::::res://rooj/TILESET/supplies_objects.png<>uid://domrx1cgi35kg::::res://content/destroyable/grass.tscn<>uid://cn71d3cqefurb::::res://rooj/TILESET/full.png<>uid://dxma3r6xd3454::::res://content/destroyable/pot.tscn<>uid://8n3w7nlr0cmq::::res://rooj/TILESET/7 House/2.png<>uid://c08vcolmx5mnb::::res://rooj/TILESET/SunnysideWorld_Tileset_V0.1.png<>uid://dj1mf7776e3qa::::res://rooj/TILESET/7 House/3.png<>uid://cmhlobvbo5t1u::::res://content/map/TilesetDesert.png<>uid://dn4fgrjhgg8gh::::res://rooj/TILESET/7 House/4.png<>uid://bev8xfq0rg0i4::::res://content/map/TilesetNature.png<>uid://bkaeqcm1rbyq6::::res://rooj/TILESET/Supplies.png<>uid://blxpvr86117kx::::res://rooj/TILESET/Plants.png<>uid://tb8jwbi7m2e0::::res://rooj/TILESET/walls_floor.png<>uid://becevutkwb330::::res://rooj/TILESET/7 House/1.png
+=======
+::res://content/environment/autumn/::1756292148
+environment.tres::Resource/ResourceEnvironment::7907374591822514739::1756292148::0::1::::<><><>0<>0<><>::uid://dlyvs1vtq6n45::::res://system/environment/resource_environment.gd
+gradient.tres::GradientTexture1D::8314323315187124832::1713529073::0::1::::<><><>0<>0<><>::
+::res://content/environment/swamp/::1756292148
+environment.tres::Resource/ResourceEnvironment::4058633743411842415::1756292148::0::1::::<><><>0<>0<><>::uid://bdvl5xcum1mtt::::res://content/environment/swamp/gradient.tres<>uid://bh0aq1er5v5o1::::res://audio/music/theme_swamp.ogg<>uid://dlyvs1vtq6n45::::res://system/environment/resource_environment.gd
+gradient.tres::GradientTexture1D::2641061820232474585::1756292148::0::1::::<><><>0<>0<><>::
+::res://content/map/::1756292255
+map_village.tscn::PackedScene::7147796013218110355::1756292255::0::1::::<><><>0<>0<><>::uid://ck4ncv1wxtff5::::res://system/map/map.tscn<>uid://05wct67qpx6m::::res://system/environment/environment_shape.gd<>uid://bx3bdtejr87up::::res://content/environment/swamp/environment.tres<>uid://dkwnklyceey24::::res://content/environment/autumn/environment.tres<>uid://0t0eno7meef2::::res://system/damage/damage_area.gd<>uid://bqb3fwgm61b2b::::res://system/damage/resource_damage.gd<>uid://dlyvs1vtq6n45::::res://system/environment/resource_environment.gd<>uid://ujea2b11dl3n::::res://content/team/player_team.tres<>uid://dvnv45u7vj35n::::res://content/character/pig/pig.tscn<>uid://co5qpuj3hns3e::::res://content/character/ninja_blue/ninja_blue.tscn<>uid://14gxurpdh5qb::::res://system/player_assignor.gd<>uid://xjlbmbimxaaq::::res://content/team/npc_team.tres<>uid://cw76qbrkm15gy::::res://content/character/samurai_green/samurai_green.tscn<>uid://dh4c80m4ixesm::::res://system/behavior/behavior_follow.gd<>uid://c0t84ofbbsv1h::::res://system/behavior/behavior_follow_path.gd<>uid://bheb2v7fdghba::::res://content/character/samurai_blue/samurai_blue.tscn<>uid://c7vlu3uu47bb5::::res://audio/music/theme_dream.ogg<>uid://btuct7amjswpc::::res://system/teleporter/teleporter.gd
+tileset.tres::TileSet::1351180785935369792::1756292147::0::1::::<><><>0<>0<><>::uid://blisphvmuiydg::::res://content/map/tileset_village_abandoned.png<>uid://cfa7eykkf3o07::::res://content/map/tileset_floor.png<>uid://dga8b4mbpf0ch::::res://content/map/tileset_interior_floor.png<>uid://3c43vbuvu3gq::::res://rooj/TILESET/spr_tileset_sunnysideworld.png<>uid://dseocn2by32rs::::res://content/map/tileset_wall_simple.png<>uid://dreyqw5q5qte4::::res://rooj/TILESET/Objects.png<>uid://44k1t5e1t2uo::::res://content/map/tileset_animated.png<>uid://dirbwdw3djv4n::::res://rooj/TILESET/exterior.png<>uid://dc2otpemqpad2::::res://content/destroyable/crate.tscn<>uid://ba8eiwrc1lwan::::res://rooj/TILESET/supplies_objects.png<>uid://domrx1cgi35kg::::res://content/destroyable/grass.tscn<>uid://cn71d3cqefurb::::res://rooj/TILESET/full.png<>uid://dxma3r6xd3454::::res://content/destroyable/pot.tscn<>uid://8n3w7nlr0cmq::::res://rooj/TILESET/7 House/2.png<>uid://c08vcolmx5mnb::::res://rooj/TILESET/SunnysideWorld_Tileset_V0.1.png<>uid://dj1mf7776e3qa::::res://rooj/TILESET/7 House/3.png<>uid://cmhlobvbo5t1u::::res://content/map/TilesetDesert.png<>uid://dn4fgrjhgg8gh::::res://rooj/TILESET/7 House/4.png<>uid://bev8xfq0rg0i4::::res://content/map/TilesetNature.png<>uid://bkaeqcm1rbyq6::::res://rooj/TILESET/Supplies.png<>uid://blxpvr86117kx::::res://rooj/TILESET/Plants.png<>uid://tb8jwbi7m2e0::::res://rooj/TILESET/walls_floor.png<>uid://becevutkwb330::::res://rooj/TILESET/7 House/1.png
+>>>>>>> Rooj
 TilesetDesert.png::CompressedTexture2D/CompressedTexture2D::5630251108385697796::1756291952::1756291952::1::::<><><>0<>0<>70764f7b02250685f5ee09279929577b<>res://.godot/imported/TilesetDesert.png-de993374a2d338e06eaf387e0e2b069d.ctex::
 TilesetNature.png::CompressedTexture2D/CompressedTexture2D::2712573013594081521::1756291952::1756291952::1::::<><><>0<>0<>6544a257a493b23510d6ca156a953b9d<>res://.godot/imported/TilesetNature.png-774fec56ea74706a0e2b7ba2f4d09e2c.ctex::
 tileset_animated.png::CompressedTexture2D/CompressedTexture2D::2095998065444914906::1707101079::1755951469::1::::<><><>0<>0<>8c20d0aa7eea6824f777d8ffeb94241c<>res://.godot/imported/tileset_animated.png-bcb2742920f79d2f18e6308195dfc06b.ctex::
@@ -71,11 +91,19 @@ particle_wood.png::CompressedTexture2D/CompressedTexture2D::1339534168270254914:
 particle_wood.tres::Resource/ResourceParticle::7982703140708315703::1755951479::0::1::::<><><>0<>0<><>::uid://xxbobge6gbmx::::res://system/particle/resource_particle.gd<>uid://tc46xpav16ok::::res://content/particle/particle_wood.png
 ::res://content/stat/::1755951479
 one_life.tres::Resource/ResourceLife::130726452963930236::1755951479::0::1::::<><><>0<>0<><>::uid://cqgr716yojk2q::::res://system/stat/life/resource_life.gd
+<<<<<<< HEAD
 ::res://content/team/::1756291939
 enemy_team.tres::Resource/ResourceDamageTeam::4226066685758810133::1755951480::0::1::::<><><>0<>0<><>::uid://b7lkir53ydray::::res://system/damage/resource_damage_team.gd
 neutral_team.tres::Resource/ResourceDamageTeam::1578183615779428910::1755951480::0::1::::<><><>0<>0<><>::uid://b7lkir53ydray::::res://system/damage/resource_damage_team.gd
 npc_team.tres::Resource/ResourceDamageTeam::1633593108381048392::1755951480::0::1::::<><><>0<>0<><>::uid://b7lkir53ydray::::res://system/damage/resource_damage_team.gd
 player_team.tres::Resource/ResourceDamageTeam::1422600561409707177::1756291939::0::1::::<><><>0<>0<><>::uid://b7lkir53ydray::::res://system/damage/resource_damage_team.gd
+=======
+::res://content/team/::1756292148
+enemy_team.tres::Resource/ResourceDamageTeam::4226066685758810133::1755951480::0::1::::<><><>0<>0<><>::uid://b7lkir53ydray::::res://system/damage/resource_damage_team.gd
+neutral_team.tres::Resource/ResourceDamageTeam::1578183615779428910::1755951480::0::1::::<><><>0<>0<><>::uid://b7lkir53ydray::::res://system/damage/resource_damage_team.gd
+npc_team.tres::Resource/ResourceDamageTeam::1633593108381048392::1755951480::0::1::::<><><>0<>0<><>::uid://b7lkir53ydray::::res://system/damage/resource_damage_team.gd
+player_team.tres::Resource/ResourceDamageTeam::1422600561409707177::1756292148::0::1::::<><><>0<>0<><>::uid://b7lkir53ydray::::res://system/damage/resource_damage_team.gd
+>>>>>>> Rooj
 ::res://content/ui/::1755951469
 heart.png::CompressedTexture2D/CompressedTexture2D::8902934846529567540::1707081222::1755951469::1::::<><><>0<>0<>a3c8e18b5513e0f7b6d8a7aa9dbd7b21<>res://.godot/imported/heart.png-b0c5c7bdd3f9d069034640f80efd927b.ctex::
 heart_2.png::CompressedTexture2D/CompressedTexture2D::3467391227696769193::1707082913::1755951469::1::::<><><>0<>0<>64410f313bbdb08cd1011bbc431fb2cc<>res://.godot/imported/heart_2.png-ea5c0380bfba9af6df0566590d681d30.ctex::
@@ -97,6 +125,7 @@ sprite.png::CompressedTexture2D/CompressedTexture2D::8232225943338320250::161626
 club.tres::Resource/ResourceWeapon::1410490290586837804::1756129302::0::1::::<><><>0<>0<><>::uid://bqb3fwgm61b2b::::res://system/damage/resource_damage.gd<>uid://dumf1kd1q0v45::::res://system/weapon/resource_weapon.gd<>uid://dis75asuioxax::::res://content/weapon/club/sprite.png<>uid://dcuuywoj0y6ms::::res://content/weapon/club/in_hand.png
 in_hand.png::CompressedTexture2D/CompressedTexture2D::7342185669929882006::1616260875::1755951469::1::::<><><>0<>0<>2efb99f772cefec6f5613226ad6a2270<>res://.godot/imported/in_hand.png-052a2612dc930afcc551fb4aab0f1f77.ctex::
 sprite.png::CompressedTexture2D/CompressedTexture2D::7759928146068767459::1616260865::1755951469::1::::<><><>0<>0<>fefa3c1651e72f90a22ee087877b00d4<>res://.godot/imported/sprite.png-51ebb69b7b4e84a14d0f7e0b6f495b2d.ctex::
+<<<<<<< HEAD
 ::res://jame/::1756291990
 giantbamboo.tscn::PackedScene::2046307112505903682::1756291990::0::1::::<><><>0<>0<><>::uid://daft5lbsn2fw6::::res://jame/dataJamie/GiantBamboo-20250827T045133Z-1-001/GiantBamboo/Hit.png<>uid://tonikuder12j::::res://jame/dataJamie/GiantBamboo-20250827T045133Z-1-001/GiantBamboo/Idle.png<>uid://22eog2l0inev::::res://jame/dataJamie/GiantBamboo-20250827T045133Z-1-001/GiantBamboo/Walk.png
 giantflam.tscn::PackedScene::316459445671908762::1756291990::0::1::::<><><>0<>0<><>::uid://bnwq4keu5abjf::::res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantFlam/Hit.png<>uid://bh1i8am176r7::::res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantFlam/Idle.png
@@ -179,6 +208,15 @@ Head.png::CompressedTexture2D/CompressedTexture2D::2184663556692594111::17562919
 ::res://rooj/::1756291953
 Map.tscn::PackedScene::5716981875996346394::1756291952::0::1::::<><><>0<>0<><>::uid://dwtpv76elqabc::::res://system/map/map_size_bg.png<>uid://tir0rfjtiwma::::res://content/map/tileset.tres<>uid://co5qpuj3hns3e::::res://content/character/ninja_blue/ninja_blue.tscn<>uid://14gxurpdh5qb::::res://system/player_assignor.gd<>uid://0t0eno7meef2::::res://system/damage/damage_area.gd<>uid://bqb3fwgm61b2b::::res://system/damage/resource_damage.gd<>uid://ujea2b11dl3n::::res://content/team/player_team.tres
 root.tscn::PackedScene::-1::1756291953::0::1::::<><><>0<>0<><>::
+=======
+::res://jame/::1756292255
+งาน  jame.txt::TextFile::-1::1756129425::0::1::::<><><>0<>0<><>::
+::res://pluem/::1756133921
+งาน  pluem.txt::TextFile::-1::1756129425::0::1::::<><><>0<>0<><>::
+::res://rooj/::1756292255
+Map.tscn::PackedScene::5716981875996346394::1756292255::0::1::::<><><>0<>0<><>::uid://dwtpv76elqabc::::res://system/map/map_size_bg.png<>uid://tir0rfjtiwma::::res://content/map/tileset.tres
+root.tscn::PackedScene::5091632119446357149::1756292255::0::1::::<><><>0<>0<><>::
+>>>>>>> Rooj
 งาน  rooj.txt::TextFile::-1::1756129425::0::1::::<><><>0<>0<><>::
 ::res://rooj/TILESET/::1756291953
 exterior.png::CompressedTexture2D/CompressedTexture2D::7755967419293580083::1756291953::1756291953::1::::<><><>0<>0<>caaa224747e3bae4349201aa4aa9ba04<>res://.godot/imported/exterior.png-ba5b69debc7286d3ef645099d7f3fba2.ctex::
@@ -221,11 +259,19 @@ icon_character.png::CompressedTexture2D/CompressedTexture2D::956047147311152035:
 life_bar.gd::GDScript::4607055145929741104::1707052956::0::1::::<>TextureProgressBar<>res://system/stat/life/icon_life_bar.png<>0<>0<><>::
 resource_character.gd::GDScript::7431170090191082728::1713534826::0::1::::ResourceCharacter<>Resource<><>0<>0<><>::
 sprite_character.gd::GDScript::1194852566475948443::1713459966::0::1::::SpriteCharacter<>Sprite2D<><>0<>0<><>::
+<<<<<<< HEAD
 ::res://system/color_correction/::1756290198
 color_correction.gd::GDScript::6715419219307595957::1707078685::0::1::::ColorCorrection<>ColorRect<>res://system/color_correction/icon_color_correction.png<>0<>1<><>::
 gradient_neutral.tres::GradientTexture1D::6030850697513887018::1707014768::0::1::::<><><>0<>0<><>::
 icon_color_correction.png::CompressedTexture2D/CompressedTexture2D::5380943723361326470::1707015437::1755951469::1::::<><><>0<>0<>a4769ad7783303c118724a723f836726<>res://.godot/imported/icon_color_correction.png-571e667fcd6c5dd0f4df6f50967aa138.ctex::
 material.tres::ShaderMaterial::9194693162360903453::1756267998::0::1::::<><><>0<>0<><>::uid://bymwj58r6eo0w::::res://system/color_correction/shader_color_correction.gdshader
+=======
+::res://system/color_correction/::1756292147
+color_correction.gd::GDScript::6715419219307595957::1707078685::0::1::::ColorCorrection<>ColorRect<>res://system/color_correction/icon_color_correction.png<>0<>1<><>::
+gradient_neutral.tres::GradientTexture1D::6030850697513887018::1707014768::0::1::::<><><>0<>0<><>::
+icon_color_correction.png::CompressedTexture2D/CompressedTexture2D::5380943723361326470::1707015437::1755951469::1::::<><><>0<>0<>a4769ad7783303c118724a723f836726<>res://.godot/imported/icon_color_correction.png-571e667fcd6c5dd0f4df6f50967aa138.ctex::
+material.tres::ShaderMaterial::9194693162360903453::1756292147::0::1::::<><><>0<>0<><>::uid://bymwj58r6eo0w::::res://system/color_correction/shader_color_correction.gdshader
+>>>>>>> Rooj
 shader_color_correction.gdshader::Shader::4097078937533654800::1756290198::0::1::::<><><>0<>0<><>::
 ::res://system/damage/::1755951469
 damage_area.gd::GDScript::1795470042173671861::1713531210::0::1::::DamageArea<>Area2D<>res://system/damage/icon_damage_area.png<>0<>0<><>::
@@ -264,11 +310,19 @@ icon_map.png::CompressedTexture2D/CompressedTexture2D::6516741331222671362::1706
 map.gd::GDScript::2936061024115553491::1713530715::0::1::::Map<>Node2D<>res://system/map/icon_map.png<>0<>0<><>::
 map.tscn::PackedScene::5535390795314368932::1755951480::0::1::::<><><>0<>0<><>::uid://tir0rfjtiwma::::res://content/map/tileset.tres<>uid://bh3iq4q3x0gad::::res://system/map/map.gd<>uid://dwtpv76elqabc::::res://system/map/map_size_bg.png<>uid://c7ax0l0kymtss::::res://system/environment/environment_area.gd
 map_size_bg.png::CompressedTexture2D/CompressedTexture2D::8743589773839862932::1706962620::1755951468::1::::<><><>0<>0<>0f9d498e0eef0941720057c0ac98e5a6<>res://.godot/imported/map_size_bg.png-2678605399441433a28a3882e46268ed.ctex::
+<<<<<<< HEAD
 ::res://system/particle/::1756291939
 icon_particle.png::CompressedTexture2D/CompressedTexture2D::4058171637959446931::1707070954::1755951468::1::::<><><>0<>0<>49834ece8064a76b47724436b09bc573<>res://.godot/imported/icon_particle.png-d11fd2983edc7338dd384f0296468a2d.ctex::
 icon_resource_particle.png::CompressedTexture2D/CompressedTexture2D::7410659625010550103::1707079219::1755951468::1::::<><><>0<>0<>44cc019fba9ba0c69531212ba496609a<>res://.godot/imported/icon_resource_particle.png-37c7121339fbb19d1f03a7cede33c590.ctex::
 particle.gd::GDScript::5475155399218299441::1707079290::0::1::::Particle<>GPUParticles2D<>res://system/particle/icon_particle.png<>0<>1<><>::
 particle_process_explosion.tres::ParticleProcessMaterial::4848685496383157755::1756291939::0::1::::<><><>0<>0<><>::
+=======
+::res://system/particle/::1756292147
+icon_particle.png::CompressedTexture2D/CompressedTexture2D::4058171637959446931::1707070954::1755951468::1::::<><><>0<>0<>49834ece8064a76b47724436b09bc573<>res://.godot/imported/icon_particle.png-d11fd2983edc7338dd384f0296468a2d.ctex::
+icon_resource_particle.png::CompressedTexture2D/CompressedTexture2D::7410659625010550103::1707079219::1755951468::1::::<><><>0<>0<>44cc019fba9ba0c69531212ba496609a<>res://.godot/imported/icon_resource_particle.png-37c7121339fbb19d1f03a7cede33c590.ctex::
+particle.gd::GDScript::5475155399218299441::1707079290::0::1::::Particle<>GPUParticles2D<>res://system/particle/icon_particle.png<>0<>1<><>::
+particle_process_explosion.tres::ParticleProcessMaterial::4848685496383157755::1756292147::0::1::::<><><>0<>0<><>::
+>>>>>>> Rooj
 resource_particle.gd::GDScript::1661909872141136851::1707079371::0::1::::ResourceParticle<>Resource<>res://system/particle/icon_resource_particle.png<>0<>1<><>::
 ::res://system/shader/::1756290198
 shader_moving_texture.gdshader::Shader::1965576263190478248::1756290198::0::1::::<><><>0<>0<><>::
