@@ -1,6 +1,7 @@
-[gd_scene load_steps=20 format=3 uid="uid://b0rbig6p7l0sp"]
+[gd_scene load_steps=21 format=3 uid="uid://b0rbig6p7l0sp"]
 
 [ext_resource type="Texture2D" uid="uid://c75rmjh5qm5a5" path="res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantFrog/Hit.png" id="1_3qq7p"]
+[ext_resource type="Script" uid="uid://b5djii0t3vedt" path="res://GameProject/Enemy/giantfrog.gd" id="1_hc4so"]
 [ext_resource type="Texture2D" uid="uid://bkex2cu77eusc" path="res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantFrog/Idle40x40.png" id="2_jni7u"]
 [ext_resource type="Texture2D" uid="uid://ckncy764xje1" path="res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantFrog/Jump.png" id="3_5lmpb"]
 
@@ -125,11 +126,20 @@ radius = 17.0
 height = 40.0
 
 [node name="Giantfrog" type="CharacterBody2D"]
+script = ExtResource("1_hc4so")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_dhydr")
 animation = &"Jump"
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, -2)
+shape = SubResource("CapsuleShape2D_pnyam")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -2)
 shape = SubResource("CapsuleShape2D_pnyam")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

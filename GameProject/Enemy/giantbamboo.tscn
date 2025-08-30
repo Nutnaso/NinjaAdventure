@@ -1,5 +1,6 @@
-[gd_scene load_steps=28 format=3 uid="uid://4fim5lbsvgpe"]
+[gd_scene load_steps=29 format=3 uid="uid://4fim5lbsvgpe"]
 
+[ext_resource type="Script" uid="uid://dcvypdqrnrslq" path="res://GameProject/Enemy/giantbamboo.gd" id="1_5jcyy"]
 [ext_resource type="Texture2D" uid="uid://daft5lbsn2fw6" path="res://jame/dataJamie/GiantBamboo-20250827T045133Z-1-001/GiantBamboo/Hit.png" id="1_xc3ol"]
 [ext_resource type="Texture2D" uid="uid://tonikuder12j" path="res://jame/dataJamie/GiantBamboo-20250827T045133Z-1-001/GiantBamboo/Idle.png" id="2_8w3sv"]
 [ext_resource type="Texture2D" uid="uid://22eog2l0inev" path="res://jame/dataJamie/GiantBamboo-20250827T045133Z-1-001/GiantBamboo/Walk.png" id="3_uubi8"]
@@ -173,20 +174,28 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk",
-"speed": 5.0
+"speed": 11.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8hwu0"]
-size = Vector2(46, 51)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5jcyy"]
+size = Vector2(50.5, 52)
 
-[node name="giantbamboo" type="CharacterBody2D"]
+[node name="giantbamboo" type="CharacterBody2D" groups=["enemy"]]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_5jcyy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jihkt")
-animation = &"walk"
-frame = 6
-frame_progress = 0.707923
+animation = &"idel"
+frame_progress = 0.114855
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 0.5)
-shape = SubResource("RectangleShape2D_8hwu0")
+[node name="DamageZone" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="DamageZone"]
+position = Vector2(-0.25, 0)
+shape = SubResource("RectangleShape2D_5jcyy")
+
+[connection signal="area_entered" from="DamageZone" to="." method="_on_damage_zone_area_entered"]

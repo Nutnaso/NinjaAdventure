@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://erkbng8ftpkc"]
+[gd_scene load_steps=14 format=3 uid="uid://erkbng8ftpkc"]
 
 [ext_resource type="Texture2D" uid="uid://bnwq4keu5abjf" path="res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantFlam/Hit.png" id="1_580e2"]
+[ext_resource type="Script" uid="uid://r51y5xivxm64" path="res://GameProject/Enemy/giantflam.gd" id="1_wmmq4"]
 [ext_resource type="Texture2D" uid="uid://bh1i8am176r7" path="res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantFlam/Idle.png" id="2_i66q8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i7i6n"]
@@ -77,11 +78,20 @@ radius = 24.0
 height = 48.0
 
 [node name="Giantflam" type="CharacterBody2D"]
+script = ExtResource("1_wmmq4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pcgva")
 animation = &"walk"
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_xsjli")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -1)
 shape = SubResource("CapsuleShape2D_xsjli")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

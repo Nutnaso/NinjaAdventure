@@ -1,4 +1,6 @@
 CollisionShape2D
+Area2D
+Camera2D
 AnimatedSprite2D
 CharacterBody2D
 VisibleOnScreenNotifier2D
@@ -10,5 +12,3 @@ HScrollBar
 VSlider
 HSlider
 PanelContainer
-LineEdit
-TextEdit

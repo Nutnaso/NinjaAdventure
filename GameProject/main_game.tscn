@@ -1,3 +1,22 @@
-[gd_scene format=3 uid="uid://cnikb2knlft7d"]
+[gd_scene load_steps=4 format=3 uid="uid://cnikb2knlft7d"]
+
+[ext_resource type="PackedScene" uid="uid://cnpl4d2rgyrvm" path="res://rooj/Map.tscn" id="1_ekgu0"]
+[ext_resource type="PackedScene" uid="uid://co5qpuj3hns3e" path="res://content/character/ninja_blue/ninja_blue.tscn" id="2_jaf13"]
+[ext_resource type="PackedScene" uid="uid://4fim5lbsvgpe" path="res://GameProject/Enemy/giantbamboo.tscn" id="2_uykdc"]
 
 [node name="MainGame" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_ekgu0")]
+position = Vector2(-3128, -1616)
+
+[node name="Map" parent="Map" instance=ExtResource("1_ekgu0")]
+position = Vector2(-3125, -1616)
+
+[node name="NinjaBlue" parent="." instance=ExtResource("2_jaf13")]
+position = Vector2(-3888, -1600)
+
+[node name="Camera2D" type="Camera2D" parent="NinjaBlue"]
+zoom = Vector2(4, 4)
+
+[node name="giantbamboo" parent="." instance=ExtResource("2_uykdc")]
+position = Vector2(-3840, -1592)
