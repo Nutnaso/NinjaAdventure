@@ -94,8 +94,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fg82u"]
-radius = 24.0
-height = 50.0
+radius = 16.0
+height = 34.0
 
 [node name="giantspirit" type="CharacterBody2D"]
 collision_layer = 0
@@ -111,7 +111,7 @@ collision_layer = 4
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DamageZone"]
-position = Vector2(0, -1)
+position = Vector2(-1, 5)
 shape = SubResource("CapsuleShape2D_fg82u")
 
 [connection signal="area_entered" from="DamageZone" to="." method="_on_damage_zone_area_entered"]

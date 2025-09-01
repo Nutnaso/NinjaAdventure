@@ -178,10 +178,9 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5jcyy"]
-size = Vector2(50.5, 52)
+size = Vector2(38.5, 49.5)
 
 [node name="giantbamboo" type="CharacterBody2D" groups=["enemy"]]
-collision_layer = 0
 collision_mask = 0
 script = ExtResource("1_5jcyy")
 
@@ -195,7 +194,7 @@ collision_layer = 4
 collision_mask = 2
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="DamageZone"]
-position = Vector2(-0.25, 0)
+position = Vector2(0, 0.75)
 shape = SubResource("RectangleShape2D_5jcyy")
 
 [connection signal="area_entered" from="DamageZone" to="." method="_on_damage_zone_area_entered"]

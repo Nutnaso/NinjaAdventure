@@ -1,13 +1,39 @@
-[gd_scene load_steps=3 format=3 uid="uid://bcdfclsk0a671"]
+[gd_scene load_steps=5 format=3 uid="uid://bcdfclsk0a671"]
 
 [ext_resource type="Script" uid="uid://dyksiw2040ef7" path="res://nut/boss_snake.gd" id="1_h4rsx"]
 [ext_resource type="Texture2D" uid="uid://6ejdbtpsng1l" path="res://nut/Head.png" id="4_2okyu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ehqle"]
+radius = 24.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nh2vp"]
+radius = 16.0
 
 [node name="SnakeBoss" type="Node2D"]
 script = ExtResource("1_h4rsx")
 
 [node name="Head" type="Sprite2D" parent="."]
-position = Vector2(0, -32)
+position = Vector2(0, -8)
 texture = ExtResource("4_2okyu")
 
+[node name="DamageZone" type="Area2D" parent="Head"]
+position = Vector2(0, 8)
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Head/DamageZone"]
+position = Vector2(0, -8)
+shape = SubResource("CircleShape2D_ehqle")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Head"]
+position = Vector2(0, 16)
+collision_layer = 31
+collision_mask = 31
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Head/StaticBody2D"]
+position = Vector2(0, -16)
+shape = SubResource("CircleShape2D_nh2vp")
+
 [node name="BodyContainer" type="Node2D" parent="."]
+
+[connection signal="area_entered" from="Head/DamageZone" to="." method="_on_damage_zone_area_entered"]

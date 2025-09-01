@@ -136,11 +136,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qjdew"]
-size = Vector2(70, 39)
+size = Vector2(68, 12)
 
 [node name="giantredsamurai" type="CharacterBody2D"]
 collision_layer = 0
-collision_mask = 0
 script = ExtResource("1_bkkvh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -152,7 +151,7 @@ collision_layer = 4
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DamageZone"]
-position = Vector2(-1, 2)
+position = Vector2(0, 13)
 shape = SubResource("RectangleShape2D_qjdew")
 
 [connection signal="area_entered" from="DamageZone" to="." method="_on_damage_zone_area_entered"]

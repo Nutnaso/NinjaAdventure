@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cb1puhmg81h5p" path="res://content/character/ninja_blue/sprite.png" id="2_hnmtc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4kg58"]
-size = Vector2(15, 46.75)
+size = Vector2(15, 19.375)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0we05"]
 radius = 1.0
@@ -16,7 +16,7 @@ radius = 8.0
 radius = 8.06226
 
 [node name="NinjaBlue" groups=["player"] instance=ExtResource("1_gjf68")]
-collision_layer = 0
+collision_layer = 1
 collision_mask = 1
 
 [node name="AttackZone" type="Area2D" parent="." index="0"]
@@ -24,7 +24,7 @@ collision_layer = 3
 collision_mask = 5
 
 [node name="AttackZoneShape2D2" type="CollisionShape2D" parent="AttackZone" index="0"]
-position = Vector2(32, -4)
+position = Vector2(18.3125, -4.00005)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_4kg58")
 
