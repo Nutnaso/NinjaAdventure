@@ -37,7 +37,7 @@ func _ready() -> void:
 	update_arrow_direction()
 
 
-func on_player_entered(player:Character):
+func on_player_entered(player):
 	var transition:Transition = get_tree().get_first_node_in_group("transition")
 	if transition:
 		await transition.play(transition_enter)

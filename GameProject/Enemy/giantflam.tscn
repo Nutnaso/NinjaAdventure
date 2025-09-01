@@ -49,7 +49,27 @@ animations = [{
 "texture": SubResource("AtlasTexture_htbxg")
 }],
 "loop": true,
-"name": &"new_animation",
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wkweb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0k8n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8odqy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccih2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ki2d")
+}],
+"loop": true,
+"name": &"idel",
 "speed": 5.0
 }, {
 "frames": [{
@@ -78,20 +98,20 @@ radius = 24.0
 height = 48.0
 
 [node name="Giantflam" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
 script = ExtResource("1_wmmq4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pcgva")
 animation = &"walk"
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="DamageZone" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageZone"]
 position = Vector2(0, -1)
 shape = SubResource("CapsuleShape2D_xsjli")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -1)
-shape = SubResource("CapsuleShape2D_xsjli")
-
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="area_entered" from="DamageZone" to="." method="_on_damage_zone_area_entered"]

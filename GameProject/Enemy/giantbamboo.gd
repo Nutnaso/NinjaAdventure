@@ -1,5 +1,4 @@
 extends CharacterBody2D
-class_name Enemy
 
 @export var max_health: int = 50
 var current_health: int
@@ -15,10 +14,11 @@ enum State { IDLE, WALK, HIT, DEAD }
 var state: State = State.IDLE
 
 func _ready() -> void:
+	add_to_group("enemy")
 	current_health = max_health
 	sprite_mop.play("idel")
-	add_to_group("enemy")
 	damage_zone.area_entered.connect(_on_damage_zone_area_entered)
+	
 
 func _physics_process(delta: float) -> void:
 	match state:
@@ -39,7 +39,7 @@ func _on_damage_zone_area_entered(area: Area2D) -> void:
 		player_node = player_node.get_parent()
 
 	if player_node:
-		var player = player_node as Character
+		var player = player_node
 		if player:
 			print("✅ Enemy hit by player:", player.name)
 			player.take_damage(damage_to_player)

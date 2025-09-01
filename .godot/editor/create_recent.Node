@@ -1,5 +1,7 @@
 CollisionShape2D
 Area2D
+Node2D
+Node
 Camera2D
 AnimatedSprite2D
 CharacterBody2D
@@ -10,5 +12,3 @@ CheckBox
 VScrollBar
 HScrollBar
 VSlider
-HSlider
-PanelContainer

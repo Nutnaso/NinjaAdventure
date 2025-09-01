@@ -74,7 +74,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_cu7rn")
 }],
 "loop": true,
-"name": &"Hit",
+"name": &"hit",
 "speed": 5.0
 }, {
 "frames": [{
@@ -94,7 +94,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_6dn46")
 }],
 "loop": true,
-"name": &"Idel",
+"name": &"idel",
 "speed": 5.0
 }, {
 "frames": [{
@@ -117,7 +117,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_bq7p1")
 }],
 "loop": true,
-"name": &"Jump",
+"name": &"jump",
 "speed": 5.0
 }]
 
@@ -126,20 +126,20 @@ radius = 17.0
 height = 40.0
 
 [node name="Giantfrog" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
 script = ExtResource("1_hc4so")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_dhydr")
-animation = &"Jump"
+animation = &"idel"
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="DamageZone" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageZone"]
 position = Vector2(1, -2)
 shape = SubResource("CapsuleShape2D_pnyam")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, -2)
-shape = SubResource("CapsuleShape2D_pnyam")
-
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="area_entered" from="DamageZone" to="." method="_on_damage_zone_area_entered"]

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cb1puhmg81h5p" path="res://content/character/ninja_blue/sprite.png" id="2_hnmtc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4kg58"]
-size = Vector2(62, 40)
+size = Vector2(15, 46.75)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0we05"]
 radius = 1.0
@@ -17,14 +17,15 @@ radius = 8.06226
 
 [node name="NinjaBlue" groups=["player"] instance=ExtResource("1_gjf68")]
 collision_layer = 0
-collision_mask = 0
+collision_mask = 1
 
 [node name="AttackZone" type="Area2D" parent="." index="0"]
-collision_layer = 2
-collision_mask = 4
+collision_layer = 3
+collision_mask = 5
 
 [node name="AttackZoneShape2D2" type="CollisionShape2D" parent="AttackZone" index="0"]
-position = Vector2(3, 24)
+position = Vector2(32, -4)
+rotation = 1.5708
 shape = SubResource("RectangleShape2D_4kg58")
 
 [node name="Hitbox" parent="." index="1"]
@@ -43,7 +44,7 @@ position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_hi2a4")
 
 [node name="DamageZone" type="Area2D" parent="." index="5"]
-collision_layer = 2
+collision_layer = 3
 collision_mask = 4
 
 [node name="DamageZoneShape2D" type="CollisionShape2D" parent="DamageZone" index="0"]

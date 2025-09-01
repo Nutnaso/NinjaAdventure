@@ -139,22 +139,20 @@ animations = [{
 size = Vector2(70, 39)
 
 [node name="giantredsamurai" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
 script = ExtResource("1_bkkvh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_uuf8k")
-animation = &"hit"
-frame_progress = 0.921726
+animation = &"idel"
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="DamageZone" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageZone"]
 position = Vector2(-1, 2)
 shape = SubResource("RectangleShape2D_qjdew")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 2)
-shape = SubResource("RectangleShape2D_qjdew")
-
-[connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="area_entered" from="DamageZone" to="." method="_on_damage_zone_area_entered"]

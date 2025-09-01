@@ -1,6 +1,6 @@
 @icon("../character/icon_character.png")
 extends CharacterBody2D
-class_name Character
+
 
 enum State { IDLE, ATTACKING }
 
@@ -23,6 +23,9 @@ var current_health: int
 var invincible: bool = false
 var state: State = State.IDLE
 var just_teleport := false
+var can_move: bool = true
+
+
 
 var move_vector := Vector2.ZERO:
 	set(v):
@@ -44,10 +47,14 @@ func _physics_process(delta: float) -> void:
 	if Engine.is_editor_hint():
 		return
 
-	move_vector = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	# ตรวจสอบสามารถขยับหรือไม่
+	if can_move:
+		move_vector = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+		if Input.is_action_just_pressed("ui_accept"):
+			start_attack()
+	else:
+		move_vector = Vector2.ZERO
 
-	if Input.is_action_just_pressed("ui_accept"):
-		start_attack()
 
 	match state:
 		State.IDLE:
@@ -96,7 +103,7 @@ func _on_attack_zone_area_entered(area: Area2D) -> void:
 	while node and not node.is_in_group("enemy"):
 		node = node.get_parent()
 	if node:
-		var enemy = node as Enemy
+		var enemy = node
 		if enemy and enemy.has_method("take_damage") and state == State.ATTACKING:
 			print("✅ Player attack hit enemy: ", enemy.name)
 			enemy.take_damage(attack_power)
