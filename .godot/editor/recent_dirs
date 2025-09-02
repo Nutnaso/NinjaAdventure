@@ -1,3 +1,13 @@
+res://GameProject
+res://
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+res://rooj
+>>>>>>> Rooj
+res://content/map
+=======
+>>>>>>> Jame
 res://system/ui
 res://theme
 res://content/character/pig
@@ -6,17 +16,7 @@ res://content/destroyable
 res://system/destroyable
 res://system
 res://content/character/ninja_blue
-res://content/map
 res://system/map
 res://content/character
 res://content/behavior
 res://system/behavior
-res://system/input
-res://content/particle
-res://system/particle
-res://
-res://content/team
-res://content/environment/autumn
-res://content/environment
-res://system/color_correction
-res://system/environment
