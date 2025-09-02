@@ -10,7 +10,12 @@ extends Node2D
 @onready var player  = $NinjaBlue
 @onready var camera  = $NinjaBlue/Camera2D
 @onready var map_zone = $MapZone
-@onready var health_label = $NinjaBlue/Camera2D/Status/HealthBar # << Label สำหรับ HP
+@onready var health_label = $NinjaBlue/Camera2D/Status/HealthBar 
+@onready var black_screen = $NinjaBlue/Camera2D/BlackSceen
+@onready var white_button = $ChooseEnd/WhiteButton
+@onready var orange_button = $ChooseEnd/OrangeButton
+@onready var audio_player = $Sound/SFX/AudioStreamPlayer  # ต้องมี AudioStreamPlayer ใน scene
+@onready var cave = $MapZone/Cave        # จุดวาร์ปถ้ำ
 
 # ---------------------------
 # Dialog Data
@@ -28,6 +33,9 @@ var current_zone_name = ""
 # Event Trigger Data
 # ---------------------------
 var event_triggers = {
+	"Home": [
+		{"x": 0, "dialog": "res://pluem/script/ชนบท.json", "triggered": false}
+	],
 	"Desert": [
 		{"x": 350, "dialog": "res://pluem/script/ชนบทBoss.json", "triggered": false}
 	],
@@ -48,7 +56,6 @@ var event_triggers = {
 	"City1": [
 		{"x": 2625, "dialog": "res://pluem/script/ป่า5-2.json", "triggered": false}
 	],	
-	
 	"City2": [
 		{"x": 2850, "dialog": "res://pluem/script/เมือง1.json", "triggered": false}
 	],
@@ -61,21 +68,59 @@ var event_triggers = {
 }
 
 # ---------------------------
+# Story Flow Control
+# ---------------------------
+var story_step = 0   # คุมลำดับเหตุการณ์เริ่มเกม
+
+# ---------------------------
 # Ready
 # ---------------------------
 func _ready():
 	dialog.hide()
-	# ฟัง event health ของ player
+	black_screen.visible = false
+	white_button.hide()
+	orange_button.hide()
+	player.can_move = false
+	
+	# เซ็ตค่าเลือดเริ่มต้น
 	if player.has_signal("health_changed"):
 		player.health_changed.connect(_on_player_health_changed)
-
-	# เซ็ตค่าเลือดเริ่มต้น
 	_update_health_label(player.current_health, player.max_health)
 
 	# connect signal จากทุก Zone
 	for zone in map_zone.get_children():
 		if zone is Area2D:
 			zone.area_entered.connect(_on_zone_entered.bind(zone))
+
+	# เซ็ตกล้องเริ่มเกม
+	camera.global_position = Vector2(-125, 100)
+
+	# เริ่ม story flow
+	story_step = 0
+	start_story()
+
+# ---------------------------
+# Story Sequence
+# ---------------------------
+func start_story():
+	match story_step:
+		0:
+			load_dialog("res://pluem/script/ในบ้าน.json")
+		1:
+			load_dialog("res://pluem/script/ในบ้าน2.json")
+		2:
+			load_dialog("res://pluem/script/ในบ้าน3.json")
+		3:
+			player.global_position = cave.global_position
+			$NinjaBlue/Camera2D/BlackSceen.visible = false
+			load_dialog("res://pluem/script/ถ้ำ1.json")
+		4:
+			white_button.show()
+			orange_button.show()
+			player.can_move = false
+		5:
+			player.can_move = true
+			print("🎉 Player free to explore")
 
 # ---------------------------
 # Player Health
@@ -100,9 +145,6 @@ func _update_health_label(current_health: int, max_health: int) -> void:
 func _process(_delta):
 	if current_zone_name != "":
 		check_triggers(current_zone_name)
-		
-		
-		
 
 # ---------------------------
 # Load Dialog
@@ -132,10 +174,20 @@ func show_line(index: int):
 		dialog.show()
 		player.can_move = false
 		active_dialog = true
+
+		# ✅ เล่นเสียงตอนเจอข้อความพิเศษ
+		if line.get("text", "").find("มีเสียงระเบิด") != -1:
+			audio_player.play()
 	else:
 		dialog.hide()
 		player.can_move = true
 		active_dialog = false
+
+		# ✅ event พิเศษหลังจบบทสนทนา
+		if story_step == 0:
+			black_screen.visible = true
+		story_step += 1
+		start_story()
 
 # ---------------------------
 # Next Button Pressed
@@ -166,17 +218,12 @@ func check_triggers(zone_name: String):
 
 		var triggered = false
 
-		# pos แบบ Vector2
 		if trigger.has("pos"):
 			if player.global_position.distance_to(trigger["pos"]) < 30:
 				triggered = true
-
-		# trigger แบบ X อย่างเดียว
 		elif trigger.has("x"):
 			if abs(player.global_position.x - trigger["x"]) < 20:
 				triggered = true
-
-		# trigger แบบ Y อย่างเดียว
 		elif trigger.has("y"):
 			if abs(player.global_position.y - trigger["y"]) < 20:
 				triggered = true
@@ -194,7 +241,6 @@ func _on_zone_entered(area: Area2D, zone: Area2D):
 		current_zone_name = zone.name
 		print("Player entered zone: ", current_zone_name)
 
-		# ตั้งค่า limit กล้อง
 		var shape = zone.get_node("CollisionShape2D").shape
 		if shape is RectangleShape2D:
 			var rect_size = shape.size
@@ -205,9 +251,18 @@ func _on_zone_entered(area: Area2D, zone: Area2D):
 			camera.limit_right  = int(rect_pos.x + rect_size.x)
 			camera.limit_bottom = int(rect_pos.y + rect_size.y)
 
+# ---------------------------
+# Choice Buttons
+# ---------------------------
+func _on_orange_button_pressed() -> void:
+	load_dialog("res://pluem/script/ถ้ำ2-1.json")
+	orange_button.hide()
 
-func _on_button_pressed() -> void:
-	if not active_dialog:
-		return
-	current_index += 1
-	show_line(current_index)
+
+
+func _on_white_button_pressed():
+	load_dialog("res://pluem/script/ถ้ำ2-2.json")
+	white_button.hide()
+	orange_button.hide()
+	story_step = 5
+	start_story()
