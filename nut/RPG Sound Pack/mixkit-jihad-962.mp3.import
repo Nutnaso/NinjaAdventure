@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bragkcyvqvo1y"
+path="res://.godot/imported/mixkit-jihad-962.mp3-79023901e5192aa966800aef3fa9ffb7.mp3str"
+
+[deps]
+
+source_file="res://nut/RPG Sound Pack/mixkit-jihad-962.mp3"
+dest_files=["res://.godot/imported/mixkit-jihad-962.mp3-79023901e5192aa966800aef3fa9ffb7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

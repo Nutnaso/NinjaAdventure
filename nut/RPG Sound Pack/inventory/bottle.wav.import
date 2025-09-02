@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://di30l5qxmf1wd"
+path="res://.godot/imported/bottle.wav-13cd2f3bd6faa0bbb5548097d1a0195d.sample"
+
+[deps]
+
+source_file="res://nut/RPG Sound Pack/inventory/bottle.wav"
+dest_files=["res://.godot/imported/bottle.wav-13cd2f3bd6faa0bbb5548097d1a0195d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

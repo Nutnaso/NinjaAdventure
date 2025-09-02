@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bevxguv212v6c"
+path="res://.godot/imported/mixkit-footsteps-in-a-muddy-puddle-536.wav-c18e87cec7360b936e16a6352360a33e.sample"
+
+[deps]
+
+source_file="res://nut/RPG Sound Pack/mixkit-footsteps-in-a-muddy-puddle-536.wav"
+dest_files=["res://.godot/imported/mixkit-footsteps-in-a-muddy-puddle-536.wav-c18e87cec7360b936e16a6352360a33e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

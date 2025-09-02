@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cnikb2knlft7d"]
+[gd_scene load_steps=17 format=3 uid="uid://cnikb2knlft7d"]
 
 [ext_resource type="PackedScene" uid="uid://cnpl4d2rgyrvm" path="res://rooj/Map.tscn" id="1_ekgu0"]
 [ext_resource type="Script" uid="uid://cjfhnhgexlk43" path="res://GameProject/main_game.gd" id="1_qqmk4"]
@@ -10,9 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://erkbng8ftpkc" path="res://GameProject/Enemy/giantflam.tscn" id="8_8e4rw"]
 [ext_resource type="PackedScene" uid="uid://bcdfclsk0a671" path="res://nut/boss_snake.tscn" id="9_ci541"]
 [ext_resource type="TileSet" uid="uid://tir0rfjtiwma" path="res://content/map/tileset.tres" id="10_7ebma"]
+[ext_resource type="PackedScene" uid="uid://csqcijjokcjqo" path="res://jame/นางเอก.tscn" id="11_m6fgc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ebma"]
-size = Vector2(509, 273)
+size = Vector2(534.25, 273)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0266e"]
 size = Vector2(448, 240)
@@ -33,8 +34,7 @@ script = ExtResource("1_qqmk4")
 position = Vector2(928, 128)
 
 [node name="NinjaBlue" parent="." instance=ExtResource("2_jaf13")]
-position = Vector2(97, 162)
-speed = 150.0
+position = Vector2(1601, 482)
 
 [node name="Camera2D" type="Camera2D" parent="NinjaBlue"]
 zoom = Vector2(4, 4)
@@ -104,6 +104,7 @@ position = Vector2(269, 153)
 collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapZone/Desert"]
+position = Vector2(15.75, 0)
 shape = SubResource("RectangleShape2D_7ebma")
 
 [node name="Forest1" type="Area2D" parent="MapZone"]
@@ -135,6 +136,7 @@ shape = SubResource("RectangleShape2D_0266e")
 position = Vector2(1957, 473)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapZone/Forest5"]
+position = Vector2(-3.125, 0)
 shape = SubResource("RectangleShape2D_7ebma")
 
 [node name="City1" type="Area2D" parent="MapZone"]
@@ -157,15 +159,15 @@ position = Vector2(3569, 480)
 position = Vector2(0, -41)
 shape = SubResource("RectangleShape2D_m6fgc")
 
-[node name="Boss4" type="Area2D" parent="MapZone"]
+[node name="Boss" type="Area2D" parent="MapZone"]
 position = Vector2(4305, 693)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MapZone/Boss4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapZone/Boss"]
 position = Vector2(0, -11)
 shape = SubResource("RectangleShape2D_lnnoc")
 
 [node name="giantbamboo" parent="." instance=ExtResource("2_uykdc")]
-position = Vector2(2631, 474)
+position = Vector2(2151, 475)
 
 [node name="giantspirit" parent="." groups=["enemy"] instance=ExtResource("5_ci541")]
 position = Vector2(800, 499)
@@ -184,5 +186,46 @@ position = Vector2(4534, 507)
 
 [node name="MobActivatedWall" type="TileMapLayer" parent="."]
 tile_set = ExtResource("10_7ebma")
+
+[node name="นางเอก" parent="." instance=ExtResource("11_m6fgc")]
+position = Vector2(843, 462)
+
+[node name="Sound" type="Node" parent="."]
+
+[node name="Song" type="Node" parent="Sound"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sound/Song"]
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Sound/Song"]
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="Sound/Song"]
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="Sound/Song"]
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="Sound/Song"]
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="Sound/Song"]
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="Sound/Song"]
+
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="Sound/Song"]
+
+[node name="SFX" type="Node" parent="Sound"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sound/SFX"]
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Sound/SFX"]
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="Sound/SFX"]
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="Sound/SFX"]
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="Sound/SFX"]
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="Sound/SFX"]
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="Sound/SFX"]
+
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="Sound/SFX"]
 
 [connection signal="pressed" from="NinjaBlue/Camera2D/dialog/Panel/Button" to="." method="_on_button_pressed"]

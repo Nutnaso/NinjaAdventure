@@ -4,6 +4,7 @@
 [ext_resource type="TileSet" uid="uid://tir0rfjtiwma" path="res://content/map/tileset.tres" id="2_e3eon"]
 
 [node name="Map" type="Node2D"]
+metadata/_edit_lock_ = true
 
 [node name="ScreenGridRef" type="TextureRect" parent="."]
 auto_translate_mode = 1

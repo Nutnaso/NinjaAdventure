@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://drhb2r24cqtcv"
+path="res://.godot/imported/mixkit-big-dragon-in-the-wild-roar-16.wav-92def8be3dca89504b2ec25930ea6198.sample"
+
+[deps]
+
+source_file="res://nut/RPG Sound Pack/mixkit-big-dragon-in-the-wild-roar-16.wav"
+dest_files=["res://.godot/imported/mixkit-big-dragon-in-the-wild-roar-16.wav-92def8be3dca89504b2ec25930ea6198.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

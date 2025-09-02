@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ny1hfldf5ul1"
+path="res://.godot/imported/mixkit-epical-drums-01-676.mp3-e5549dc5929622a641ffe49553ef07c8.mp3str"
+
+[deps]
+
+source_file="res://nut/RPG Sound Pack/mixkit-epical-drums-01-676.mp3"
+dest_files=["res://.godot/imported/mixkit-epical-drums-01-676.mp3-e5549dc5929622a641ffe49553ef07c8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

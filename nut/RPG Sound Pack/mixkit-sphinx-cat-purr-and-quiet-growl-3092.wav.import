@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://28jcewpnfpq6"
+path="res://.godot/imported/mixkit-sphinx-cat-purr-and-quiet-growl-3092.wav-04ffd7f4f52d7f3768404dcc1a61f789.sample"
+
+[deps]
+
+source_file="res://nut/RPG Sound Pack/mixkit-sphinx-cat-purr-and-quiet-growl-3092.wav"
+dest_files=["res://.godot/imported/mixkit-sphinx-cat-purr-and-quiet-growl-3092.wav-04ffd7f4f52d7f3768404dcc1a61f789.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

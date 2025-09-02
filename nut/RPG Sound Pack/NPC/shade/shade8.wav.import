@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c0u7lhteyq50d"
+path="res://.godot/imported/shade8.wav-5199823448f85bcbe53626b795a7f56b.sample"
+
+[deps]
+
+source_file="res://nut/RPG Sound Pack/NPC/shade/shade8.wav"
+dest_files=["res://.godot/imported/shade8.wav-5199823448f85bcbe53626b795a7f56b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

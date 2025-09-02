@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bkdea2ahsntbn"
+path="res://.godot/imported/mixkit-effort-man-voice-2170.wav-779ce9cb87648a7600d7c1e47dfbe43b.sample"
+
+[deps]
+
+source_file="res://nut/RPG Sound Pack/mixkit-effort-man-voice-2170.wav"
+dest_files=["res://.godot/imported/mixkit-effort-man-voice-2170.wav-779ce9cb87648a7600d7c1e47dfbe43b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

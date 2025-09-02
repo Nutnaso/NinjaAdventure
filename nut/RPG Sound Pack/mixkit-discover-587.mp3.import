@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bcr60itfp3gps"
+path="res://.godot/imported/mixkit-discover-587.mp3-aa43f8f7a7aef65cb42ee0957a73c1cd.mp3str"
+
+[deps]
+
+source_file="res://nut/RPG Sound Pack/mixkit-discover-587.mp3"
+dest_files=["res://.godot/imported/mixkit-discover-587.mp3-aa43f8f7a7aef65cb42ee0957a73c1cd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

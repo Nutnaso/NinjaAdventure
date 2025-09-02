@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://y554bj6uf8li"
+path="res://.godot/imported/mixkit-latin-jazz-642.mp3-ba9c7fb49d13a722284c46d10ef8ecb7.mp3str"
+
+[deps]
+
+source_file="res://nut/RPG Sound Pack/mixkit-latin-jazz-642.mp3"
+dest_files=["res://.godot/imported/mixkit-latin-jazz-642.mp3-ba9c7fb49d13a722284c46d10ef8ecb7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

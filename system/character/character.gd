@@ -9,7 +9,7 @@ signal died
 signal health_changed(current_health: int, max_health: int)
 
 @export_category("physics")
-@export var speed: float = 300.0
+@export var speed: float = 150
 @export var acceleration: float = 1000.0
 @export var deceleration: float = 800.0
 

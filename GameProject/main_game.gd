@@ -31,12 +31,33 @@ var event_triggers = {
 	"Desert": [
 		{"x": 350, "dialog": "res://pluem/script/ชนบทBoss.json", "triggered": false}
 	],
-	#"Forest1": [
-	#	{"y": 150, "dialog": "res://pluem/script/forest_event.json", "triggered": false}
-	#],
-	#"Forest2": [
-	#	{"pos": Vector2(100, 150), "dialog": "res://pluem/script/forest_boss.json", "triggered": false}
-	#]
+	"Forest1": [
+		{"x": 650, "dialog": "res://pluem/script/ป่า1.json", "triggered": false}
+	],
+	"Forest3": [
+		{"y": 450, "dialog": "res://pluem/script/ป่า4-1-1.json", "triggered": false},
+		{"x": 1300, "dialog": "res://pluem/script/ป่า4-1-2.json", "triggered": false}
+	],
+	"Forest4": [
+		{"x": 1000, "dialog": "res://pluem/script/ป่า4-1-3.json", "triggered": false}
+	],
+	"Forest5": [
+		{"x": 1750, "dialog": "res://pluem/script/ป่า4-2.json", "triggered": false},
+		{"x": 2050, "dialog": "res://pluem/script/ป่า5-1.json", "triggered": false}
+	],
+	"City1": [
+		{"x": 2625, "dialog": "res://pluem/script/ป่า5-2.json", "triggered": false}
+	],	
+	
+	"City2": [
+		{"x": 2850, "dialog": "res://pluem/script/เมือง1.json", "triggered": false}
+	],
+	"City3": [
+		{"x": 3450, "dialog": "res://pluem/script/เมือง2.json", "triggered": false}
+	],
+	"Boss": [
+		{"x": 4450, "dialog": "res://pluem/script/ปราสาทไร้มีอณาเขต.json", "triggered": false}
+	],
 }
 
 # ---------------------------
@@ -77,10 +98,11 @@ func _update_health_label(current_health: int, max_health: int) -> void:
 # Process
 # ---------------------------
 func _process(_delta):
-	
-	
 	if current_zone_name != "":
 		check_triggers(current_zone_name)
+		
+		
+		
 
 # ---------------------------
 # Load Dialog
