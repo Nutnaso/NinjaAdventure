@@ -1,25 +1,55 @@
-[gd_scene load_steps=6 format=3 uid="uid://co5qpuj3hns3e"]
+[gd_scene load_steps=7 format=3 uid="uid://co5qpuj3hns3e"]
 
 [ext_resource type="PackedScene" uid="uid://skrlnoimlhsv" path="res://system/character/character.tscn" id="1_gjf68"]
 [ext_resource type="Texture2D" uid="uid://cb1puhmg81h5p" path="res://content/character/ninja_blue/sprite.png" id="2_hnmtc"]
-[ext_resource type="Resource" uid="uid://ujea2b11dl3n" path="res://content/team/player_team.tres" id="3_as7xg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kg58"]
+size = Vector2(15, 19.375)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0we05"]
-radius = 10.0499
+radius = 1.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hi2a4"]
-radius = 7.0
+radius = 8.0
 
-[node name="NinjaBlue" instance=ExtResource("1_gjf68")]
-team = ExtResource("3_as7xg")
+[sub_resource type="CircleShape2D" id="CircleShape2D_4kg58"]
+radius = 8.06226
+
+[node name="NinjaBlue" groups=["player"] instance=ExtResource("1_gjf68")]
+collision_layer = 1
+collision_mask = 1
+
+[node name="AttackZone" type="Area2D" parent="." index="0"]
+collision_layer = 3
+collision_mask = 5
+
+[node name="AttackZoneShape2D2" type="CollisionShape2D" parent="AttackZone" index="0"]
+position = Vector2(18.3125, -4.00005)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_4kg58")
+
+[node name="Hitbox" parent="." index="1"]
+collision_layer = 0
+script = null
 
 [node name="Shape" type="CollisionShape2D" parent="Hitbox" index="0"]
-position = Vector2(0, -1)
+position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_0we05")
 
-[node name="Sprite" parent="." index="2"]
+[node name="Sprite" parent="." index="3"]
 texture = ExtResource("2_hnmtc")
 
-[node name="Shape" type="CollisionShape2D" parent="." index="3"]
-position = Vector2(0, -1)
+[node name="Shape" type="CollisionShape2D" parent="." index="4"]
+position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_hi2a4")
+
+[node name="DamageZone" type="Area2D" parent="." index="5"]
+collision_layer = 3
+collision_mask = 4
+
+[node name="DamageZoneShape2D" type="CollisionShape2D" parent="DamageZone" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_4kg58")
+
+[connection signal="area_entered" from="AttackZone" to="." method="_on_attack_zone_area_entered"]
+[connection signal="area_entered" from="DamageZone" to="." method="_on_damage_zone_area_entered"]
