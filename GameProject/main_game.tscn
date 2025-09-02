@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cnikb2knlft7d"]
+[gd_scene load_steps=16 format=3 uid="uid://cnikb2knlft7d"]
 
 [ext_resource type="PackedScene" uid="uid://cnpl4d2rgyrvm" path="res://rooj/Map.tscn" id="1_ekgu0"]
 [ext_resource type="Script" uid="uid://cjfhnhgexlk43" path="res://GameProject/main_game.gd" id="1_qqmk4"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b0rbig6p7l0sp" path="res://GameProject/Enemy/giantfrog.tscn" id="7_m6fgc"]
 [ext_resource type="PackedScene" uid="uid://erkbng8ftpkc" path="res://GameProject/Enemy/giantflam.tscn" id="8_8e4rw"]
 [ext_resource type="PackedScene" uid="uid://bcdfclsk0a671" path="res://nut/boss_snake.tscn" id="9_ci541"]
+[ext_resource type="TileSet" uid="uid://tir0rfjtiwma" path="res://content/map/tileset.tres" id="10_7ebma"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ebma"]
 size = Vector2(509, 273)
@@ -32,7 +33,7 @@ script = ExtResource("1_qqmk4")
 position = Vector2(928, 128)
 
 [node name="NinjaBlue" parent="." instance=ExtResource("2_jaf13")]
-position = Vector2(1063, 471)
+position = Vector2(97, 162)
 speed = 150.0
 
 [node name="Camera2D" type="Camera2D" parent="NinjaBlue"]
@@ -96,7 +97,6 @@ theme_override_font_sizes/font_size = 25
 text = "HP"
 
 [node name="MapZone" type="Node2D" parent="."]
-visible = false
 metadata/_edit_lock_ = true
 
 [node name="Desert" type="Area2D" parent="MapZone"]
@@ -167,19 +167,22 @@ shape = SubResource("RectangleShape2D_lnnoc")
 [node name="giantbamboo" parent="." instance=ExtResource("2_uykdc")]
 position = Vector2(2631, 474)
 
-[node name="giantspirit" parent="." instance=ExtResource("5_ci541")]
+[node name="giantspirit" parent="." groups=["enemy"] instance=ExtResource("5_ci541")]
 position = Vector2(800, 499)
 
-[node name="giantredsamurai" parent="." instance=ExtResource("6_7ebma")]
+[node name="giantredsamurai" parent="." groups=["enemy"] instance=ExtResource("6_7ebma")]
 position = Vector2(472, 88)
 
-[node name="Giantfrog" parent="." instance=ExtResource("7_m6fgc")]
+[node name="Giantfrog" parent="." groups=["enemy"] instance=ExtResource("7_m6fgc")]
 position = Vector2(1444, 93)
 
-[node name="Giantflam" parent="." instance=ExtResource("8_8e4rw")]
+[node name="Giantflam" parent="." groups=["enemy"] instance=ExtResource("8_8e4rw")]
 position = Vector2(803, 426)
 
-[node name="SnakeBoss" parent="." instance=ExtResource("9_ci541")]
+[node name="SnakeBoss" parent="." groups=["enemy"] instance=ExtResource("9_ci541")]
 position = Vector2(4534, 507)
+
+[node name="MobActivatedWall" type="TileMapLayer" parent="."]
+tile_set = ExtResource("10_7ebma")
 
 [connection signal="pressed" from="NinjaBlue/Camera2D/dialog/Panel/Button" to="." method="_on_button_pressed"]

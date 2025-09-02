@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bb3e2qhrp5khe"]
+[gd_scene load_steps=24 format=3 uid="uid://bb3e2qhrp5khe"]
 
 [ext_resource type="Script" uid="uid://ct16t8p7cnlp4" path="res://GameProject/Enemy/giantredsamurai.gd" id="1_bkkvh"]
 [ext_resource type="Texture2D" uid="uid://bw7fk3rvrml2t" path="res://jame/dataJamie/GiantRedSamurai-20250827T045143Z-1-001/GiantRedSamurai/Hit.png" id="1_s2vnh"]
@@ -138,6 +138,10 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qjdew"]
 size = Vector2(68, 12)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bkkvh"]
+radius = 16.0
+height = 32.0
+
 [node name="giantredsamurai" type="CharacterBody2D"]
 collision_layer = 0
 script = ExtResource("1_bkkvh")
@@ -153,5 +157,9 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DamageZone"]
 position = Vector2(0, 13)
 shape = SubResource("RectangleShape2D_qjdew")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="DamageZone"]
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_bkkvh")
 
 [connection signal="area_entered" from="DamageZone" to="." method="_on_damage_zone_area_entered"]

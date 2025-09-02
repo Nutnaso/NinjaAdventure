@@ -1,4 +1,5 @@
 CollisionShape2D
+TileMapLayer
 StaticBody2D
 Label
 CanvasLayer
@@ -11,4 +12,3 @@ CharacterBody2D
 VisibleOnScreenNotifier2D
 ColorRect
 ProgressBar
-CheckBox
