@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://cnikb2knlft7d"]
+[gd_scene load_steps=29 format=4 uid="uid://cnikb2knlft7d"]
 
 [ext_resource type="PackedScene" uid="uid://cnpl4d2rgyrvm" path="res://rooj/Map.tscn" id="1_ekgu0"]
 [ext_resource type="Script" uid="uid://cjfhnhgexlk43" path="res://GameProject/main_game.gd" id="1_qqmk4"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://bcdfclsk0a671" path="res://nut/boss_snake.tscn" id="9_ci541"]
 [ext_resource type="TileSet" uid="uid://tir0rfjtiwma" path="res://content/map/tileset.tres" id="10_7ebma"]
 [ext_resource type="PackedScene" uid="uid://csqcijjokcjqo" path="res://jame/นางเอก.tscn" id="11_m6fgc"]
+[ext_resource type="FontFile" uid="uid://cr1w5ciwq4ayv" path="res://nut/paaymaay_regular.ttf" id="12_nnekx"]
 [ext_resource type="AudioStream" uid="uid://dxq0mxpfe0qfn" path="res://nut/RPG Sound Pack/mixkit-trailer-screaming-people-annihilation-351.wav" id="13_lnnoc"]
 [ext_resource type="AudioStream" uid="uid://y554bj6uf8li" path="res://nut/RPG Sound Pack/mixkit-latin-jazz-642.mp3" id="13_x65wo"]
 [ext_resource type="AudioStream" uid="uid://d4keya5l6a3xx" path="res://nut/RPG Sound Pack/mixkit-silent-descent-614.mp3" id="14_6v6wa"]
@@ -179,6 +180,7 @@ layout_mode = 0
 offset_left = 16.0
 offset_right = 1168.0
 offset_bottom = 64.0
+theme_override_fonts/font = ExtResource("12_nnekx")
 metadata/_edit_use_anchors_ = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="NinjaBlue/Camera2D/dialog/Panel"]
@@ -187,6 +189,7 @@ offset_left = 16.0
 offset_top = 64.0
 offset_right = 1200.0
 offset_bottom = 200.0
+theme_override_fonts/normal_font = ExtResource("12_nnekx")
 theme_override_font_sizes/normal_font_size = 0
 metadata/_edit_use_anchors_ = true
 
@@ -195,6 +198,7 @@ modulate = Color(1, 1, 1, 0.333333)
 layout_mode = 0
 offset_right = 1216.0
 offset_bottom = 208.0
+theme_override_fonts/font = ExtResource("12_nnekx")
 toggle_mode = true
 button_pressed = true
 action_mode = 0
@@ -206,6 +210,7 @@ offset_left = 1120.0
 offset_top = 176.0
 offset_right = 1201.0
 offset_bottom = 208.0
+theme_override_fonts/font = ExtResource("12_nnekx")
 text = "กดเพื่อไปต่อ"
 metadata/_edit_use_anchors_ = true
 
@@ -319,6 +324,7 @@ offset_left = -418.0
 offset_top = -222.0
 offset_right = -320.0
 offset_bottom = -190.0
+theme_override_fonts/font = ExtResource("12_nnekx")
 text = "จดหมายสีส้ม"
 
 [node name="WhiteButton" type="Button" parent="ChooseEnd"]
@@ -326,6 +332,7 @@ offset_left = -295.0
 offset_top = -222.0
 offset_right = -189.0
 offset_bottom = -190.0
+theme_override_fonts/font = ExtResource("12_nnekx")
 text = "จดหมายสีขาว"
 
 [node name="DeadScreen" type="CanvasLayer" parent="."]

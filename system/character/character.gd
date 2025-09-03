@@ -16,7 +16,7 @@ signal health_changed(current_health: int, max_health: int)
 @export_category("stats")
 @export var max_health: int = 100
 @export var invincible_time: float = 1.0
-@export var attack_power: int = 200
+@export var attack_power: int = 10
 @export var attack_duration: float = 0.3
 
 var current_health: int
