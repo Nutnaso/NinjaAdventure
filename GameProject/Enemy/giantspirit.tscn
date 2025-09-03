@@ -1,8 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://btpbkwyh7qrky"]
+[gd_scene load_steps=15 format=3 uid="uid://btpbkwyh7qrky"]
 
 [ext_resource type="Texture2D" uid="uid://b780hlt331ykr" path="res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantSpirit/Hit.png" id="1_7haws"]
 [ext_resource type="Script" uid="uid://yon8vtloppfe" path="res://GameProject/Enemy/giantspirit.gd" id="1_e7k8r"]
 [ext_resource type="Texture2D" uid="uid://dlyqhm8x8ue51" path="res://jame/dataJamie/enemy-20250827T044829Z-1-001/enemy/GiantSpirit/Idle.png" id="2_m6e0p"]
+[ext_resource type="AudioStream" uid="uid://crx8px4m2lca" path="res://nut/RPG Sound Pack/NPC/shade/shade15.wav" id="4_yh6dt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_001ot"]
 atlas = ExtResource("1_7haws")
@@ -113,5 +114,10 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DamageZone"]
 position = Vector2(-1, 5)
 shape = SubResource("CapsuleShape2D_fg82u")
+
+[node name="scream" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_yh6dt")
+volume_db = -21.31
+pitch_scale = 0.35
 
 [connection signal="area_entered" from="DamageZone" to="." method="_on_damage_zone_area_entered"]

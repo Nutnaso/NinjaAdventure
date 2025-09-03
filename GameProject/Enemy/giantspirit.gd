@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+signal died
 # ---------------------------
 # Stats
 # ---------------------------
@@ -64,6 +64,7 @@ func _physics_process(delta: float) -> void:
 				orbit_angle = 0.0
 
 		State.ORBIT:
+			$scream.play()
 			_play("walk")
 			if player:
 				# โคจรรอบผู้เล่น
@@ -79,6 +80,7 @@ func _physics_process(delta: float) -> void:
 					state = State.SHAKE
 
 		State.SHAKE:
+			$scream.play()
 			_play("walk")
 			var shake_timer := 0.0
 			while shake_timer < shake_time:
@@ -90,6 +92,7 @@ func _physics_process(delta: float) -> void:
 			state = State.DASH
 
 		State.DASH:
+			$scream.play()
 			_play("walk")
 			var dir = (dash_target - global_position).normalized()
 			velocity = dir * dash_speed
@@ -109,6 +112,7 @@ func _physics_process(delta: float) -> void:
 			_play("hit")
 
 		State.DEAD:
+			emit_signal("died")
 			queue_free()
 
 # ---------------------------

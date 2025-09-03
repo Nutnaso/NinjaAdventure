@@ -1,13 +1,13 @@
 extends Node2D
 class_name Boss
-
+signal died
 # ---------------------------
 # Stats
 # ---------------------------
 @export var max_health: int = 200
 var current_health: int
 
-@export var damage_to_player: int = 20
+@export var damage_to_player: int = 30
 @export var invincible_time: float = 1
 
 # ---------------------------
@@ -25,8 +25,9 @@ var current_health: int
 @onready var head = $Head
 @onready var body_container = $BodyContainer
 @onready var damage_zone: Area2D = $Head/DamageZone
+@onready var boss_song = $BossSong
 
-# ---------------------------
+# --------------------------- 
 # Body setup
 # ---------------------------
 var body_segments = []
@@ -95,6 +96,7 @@ func _physics_process(delta):
 			pass  # ไม่ขยับหัว
 
 		State.DEAD:
+			emit_signal("died")
 			pass
 
 	_update_body()
@@ -189,6 +191,7 @@ func take_damage(amount: int) -> void:
 		return
 
 	# Boss โดนตี -> หยุด 0.5 วิ
+	$Hit.play()
 	state = State.HIT
 	invincible = true
 	modulate = Color(1, 0.5, 0.5)

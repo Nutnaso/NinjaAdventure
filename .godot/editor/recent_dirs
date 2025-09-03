@@ -1,5 +1,7 @@
-res://GameProject
 res://nut/RPG Sound Pack
+res://nut/RPG Sound Pack/battle
+res://nut/RPG Sound Pack/interface
+res://GameProject
 res://jame/dataJamie/นางเอก-20250827T044812Z-1-001/นางเอก/Woman
 res://
 <<<<<<< HEAD
@@ -18,5 +20,3 @@ res://content/destroyable
 res://system/destroyable
 res://system
 res://content/character/ninja_blue
-res://system/map
-res://content/character

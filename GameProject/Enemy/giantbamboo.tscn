@@ -1,9 +1,10 @@
-[gd_scene load_steps=29 format=3 uid="uid://4fim5lbsvgpe"]
+[gd_scene load_steps=30 format=3 uid="uid://4fim5lbsvgpe"]
 
 [ext_resource type="Script" uid="uid://dcvypdqrnrslq" path="res://GameProject/Enemy/giantbamboo.gd" id="1_5jcyy"]
 [ext_resource type="Texture2D" uid="uid://daft5lbsn2fw6" path="res://jame/dataJamie/GiantBamboo-20250827T045133Z-1-001/GiantBamboo/Hit.png" id="1_xc3ol"]
 [ext_resource type="Texture2D" uid="uid://tonikuder12j" path="res://jame/dataJamie/GiantBamboo-20250827T045133Z-1-001/GiantBamboo/Idle.png" id="2_8w3sv"]
 [ext_resource type="Texture2D" uid="uid://22eog2l0inev" path="res://jame/dataJamie/GiantBamboo-20250827T045133Z-1-001/GiantBamboo/Walk.png" id="3_uubi8"]
+[ext_resource type="AudioStream" uid="uid://ctyl58a4ghywp" path="res://nut/RPG Sound Pack/mixkit-monster-footstep-1975.wav" id="5_swteh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ytf28"]
 atlas = ExtResource("1_xc3ol")
@@ -195,5 +196,10 @@ collision_mask = 2
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="DamageZone"]
 position = Vector2(0, 0.75)
 shape = SubResource("RectangleShape2D_5jcyy")
+
+[node name="Hit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_swteh")
+volume_db = -19.446
+pitch_scale = 1.27
 
 [connection signal="area_entered" from="DamageZone" to="." method="_on_damage_zone_area_entered"]

@@ -1,12 +1,12 @@
 extends CharacterBody2D
-
+signal died
 # -------------------------------
 # Stats
 # -------------------------------
-@export var max_health: int = 50
+@export var max_health: int = 120
 var current_health: int
 
-@export var damage_to_player: int = 10
+@export var damage_to_player: int = 20
 @export var invincible_time: float = 0.5
 
 # -------------------------------
@@ -86,6 +86,7 @@ func _physics_process(delta: float) -> void:
 			_play("hit")
 
 		State.DEAD:
+
 			queue_free()
 
 # -------------------------------
@@ -100,6 +101,7 @@ func _start_float() -> void:
 
 	if player_ref:
 		dash_target = player_ref.global_position
+	$Hit.play()
 	state = State.DASH
 
 	# เข้าสู่ REST หลังพุ่งเสร็จ
@@ -157,6 +159,7 @@ func take_damage(amount: int) -> void:
 		state = State.IDLE
 
 func die() -> void:
+	emit_signal("died")
 	state = State.DEAD
 	_play("hit") # หรือ "die"
 	await sprite_mop.animation_finished

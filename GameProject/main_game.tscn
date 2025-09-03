@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cnikb2knlft7d"]
+[gd_scene load_steps=28 format=4 uid="uid://cnikb2knlft7d"]
 
 [ext_resource type="PackedScene" uid="uid://cnpl4d2rgyrvm" path="res://rooj/Map.tscn" id="1_ekgu0"]
 [ext_resource type="Script" uid="uid://cjfhnhgexlk43" path="res://GameProject/main_game.gd" id="1_qqmk4"]
@@ -12,7 +12,13 @@
 [ext_resource type="PackedScene" uid="uid://bcdfclsk0a671" path="res://nut/boss_snake.tscn" id="9_ci541"]
 [ext_resource type="TileSet" uid="uid://tir0rfjtiwma" path="res://content/map/tileset.tres" id="10_7ebma"]
 [ext_resource type="PackedScene" uid="uid://csqcijjokcjqo" path="res://jame/นางเอก.tscn" id="11_m6fgc"]
-[ext_resource type="AudioStream" uid="uid://b8wmjvt4n7sok" path="res://nut/RPG Sound Pack/mixkit-masive-explosion-in-battle-2777.wav" id="12_8e4rw"]
+[ext_resource type="AudioStream" uid="uid://dxq0mxpfe0qfn" path="res://nut/RPG Sound Pack/mixkit-trailer-screaming-people-annihilation-351.wav" id="13_lnnoc"]
+[ext_resource type="AudioStream" uid="uid://y554bj6uf8li" path="res://nut/RPG Sound Pack/mixkit-latin-jazz-642.mp3" id="13_x65wo"]
+[ext_resource type="AudioStream" uid="uid://d4keya5l6a3xx" path="res://nut/RPG Sound Pack/mixkit-silent-descent-614.mp3" id="14_6v6wa"]
+[ext_resource type="AudioStream" uid="uid://d3om1w8o1ybkr" path="res://nut/RPG Sound Pack/mixkit-seduction-233.mp3" id="15_bk7xy"]
+[ext_resource type="AudioStream" uid="uid://bcr60itfp3gps" path="res://nut/RPG Sound Pack/mixkit-discover-587.mp3" id="16_3itb7"]
+[ext_resource type="AudioStream" uid="uid://dsschk3ht17hw" path="res://nut/RPG Sound Pack/interface/interface6.wav" id="17_se78y"]
+[ext_resource type="AudioStream" uid="uid://d0kr0g5cyjcin" path="res://nut/RPG Sound Pack/battle/magic1.wav" id="18_3d2qn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ebma"]
 size = Vector2(534.25, 273)
@@ -27,13 +33,16 @@ size = Vector2(484, 480)
 size = Vector2(520, 154)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lnnoc"]
-size = Vector2(917.5, 540)
+size = Vector2(803.75, 540)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8e4rw"]
 size = Vector2(539, 288.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x65wo"]
 size = Vector2(389, 269.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6v6wa"]
+size = Vector2(119, 64)
 
 [node name="MainGame" type="Node2D"]
 script = ExtResource("1_qqmk4")
@@ -104,10 +113,9 @@ position = Vector2(0, -41)
 shape = SubResource("RectangleShape2D_m6fgc")
 
 [node name="Boss" type="Area2D" parent="MapZone"]
-position = Vector2(4305, 693)
+position = Vector2(4254, 683)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapZone/Boss"]
-position = Vector2(0, -11)
 shape = SubResource("RectangleShape2D_lnnoc")
 
 [node name="Home" type="Area2D" parent="MapZone"]
@@ -121,6 +129,33 @@ position = Vector2(-306, -243)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapZone/Cave"]
 shape = SubResource("RectangleShape2D_x65wo")
+
+[node name="End" type="Area2D" parent="MapZone"]
+position = Vector2(4713, 472)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapZone/End"]
+shape = SubResource("RectangleShape2D_6v6wa")
+
+[node name="giantbamboo" parent="." instance=ExtResource("2_uykdc")]
+position = Vector2(2151, 475)
+
+[node name="giantspirit" parent="." groups=["enemy"] instance=ExtResource("5_ci541")]
+position = Vector2(800, 499)
+
+[node name="giantredsamurai" parent="." groups=["enemy"] instance=ExtResource("6_7ebma")]
+position = Vector2(472, 88)
+
+[node name="Giantfrog" parent="." groups=["enemy"] instance=ExtResource("7_m6fgc")]
+position = Vector2(1444, 93)
+
+[node name="Giantflam" parent="." groups=["enemy"] instance=ExtResource("8_8e4rw")]
+position = Vector2(803, 426)
+
+[node name="SnakeBoss" parent="." groups=["enemy"] instance=ExtResource("9_ci541")]
+position = Vector2(4534, 507)
+
+[node name="นางเอก" parent="." instance=ExtResource("11_m6fgc")]
+position = Vector2(843, 462)
 
 [node name="NinjaBlue" parent="." instance=ExtResource("2_jaf13")]
 position = Vector2(-142, 134)
@@ -176,10 +211,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="BlackSceen" type="ColorRect" parent="NinjaBlue/Camera2D"]
 visible = false
-offset_left = -599.0
-offset_top = -530.0
-offset_right = 947.0
-offset_bottom = 306.0
+offset_left = -3026.0
+offset_top = -2403.0
+offset_right = 6310.0
+offset_bottom = 4582.0
 color = Color(0, 0, 0, 1)
 
 [node name="Status" type="CanvasLayer" parent="NinjaBlue/Camera2D"]
@@ -194,85 +229,167 @@ theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 25
 text = "HP"
 
-[node name="giantbamboo" parent="." instance=ExtResource("2_uykdc")]
-position = Vector2(2151, 475)
+[node name="MobActivatedWall" type="Node2D" parent="."]
 
-[node name="giantspirit" parent="." groups=["enemy"] instance=ExtResource("5_ci541")]
-position = Vector2(800, 499)
+[node name="MobGiantSamurai" type="TileMapLayer" parent="MobActivatedWall"]
+tile_map_data = PackedByteArray("AAAiAAgADgBBAAAAAAAiAAkADgA/AAIAAAAiAAoADgA/AAIAAAAiAAsADgA/AAIAAAAiAAwADgBAAAMAAAA=")
+tile_set = ExtResource("10_7ebma")
 
-[node name="giantredsamurai" parent="." groups=["enemy"] instance=ExtResource("6_7ebma")]
-position = Vector2(472, 88)
+[node name="MobGiantFrog" type="TileMapLayer" parent="MobActivatedWall"]
+tile_map_data = PackedByteArray("AABZABEADgA/AAIAAFBbABEADgBBAAAAAFBaABEADgA/AAIAAFBYABEADgA/AAIAAFBXABEADgBAAAMAAFA=")
+tile_set = ExtResource("10_7ebma")
 
-[node name="Giantfrog" parent="." groups=["enemy"] instance=ExtResource("7_m6fgc")]
-position = Vector2(1444, 93)
+[node name="MobGiantFlamAndSpirit" type="TileMapLayer" parent="MobActivatedWall"]
+tile_map_data = PackedByteArray("AABkABsADgBBAAAAAABkABwADgA/AAIAAABkAB0ADgA/AAIAAABkAB4ADgA/AAIAAABkAB8ADgBAAAMAAAA=")
+tile_set = ExtResource("10_7ebma")
 
-[node name="Giantflam" parent="." groups=["enemy"] instance=ExtResource("8_8e4rw")]
-position = Vector2(803, 426)
+[node name="MobGiantSankeBoss" type="TileMapLayer" parent="MobActivatedWall"]
+tile_map_data = PackedByteArray("AAAeARsADgBBAAAAAAAeARwADgA/AAIAAAAeAR0ADgA/AAIAAAAeAR4ADgA/AAIAAAAeAR8ADgBAAAMAAAA=")
+tile_set = ExtResource("10_7ebma")
 
-[node name="SnakeBoss" parent="." groups=["enemy"] instance=ExtResource("9_ci541")]
-position = Vector2(4534, 507)
+[node name="CityWall" type="TileMapLayer" parent="MobActivatedWall"]
+tile_set = ExtResource("10_7ebma")
 
-[node name="นางเอก" parent="." instance=ExtResource("11_m6fgc")]
-position = Vector2(843, 462)
-
-[node name="MobActivatedWall" type="TileMapLayer" parent="."]
+[node name="MobGiantBamboo" type="TileMapLayer" parent="MobActivatedWall"]
+tile_map_data = PackedByteArray("AACIABwADgBBAAAAAACIAB0ADgA/AAIAAACIAB4ADgA/AAIAAACIAB8ADgA/AAIAAACIACAADgBAAAMAAAAJAR0ADgBBAAAAAAAJAR4ADgA/AAIAAAAJAR8ADgA/AAIAAAAJASAADgA/AAIAAAAJASEADgBAAAMAAAA=")
 tile_set = ExtResource("10_7ebma")
 
 [node name="Sound" type="Node" parent="."]
 
 [node name="Song" type="Node" parent="Sound"]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sound/Song"]
+[node name="Song1" type="AudioStreamPlayer" parent="Sound/Song"]
+stream = ExtResource("13_x65wo")
+volume_db = -23.547
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Sound/Song"]
+[node name="Song2" type="AudioStreamPlayer" parent="Sound/Song"]
+stream = ExtResource("14_6v6wa")
+volume_db = -19.623
 
-[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="Sound/Song"]
+[node name="Song3" type="AudioStreamPlayer" parent="Sound/Song"]
+stream = ExtResource("15_bk7xy")
+volume_db = -29.434
 
-[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="Sound/Song"]
+[node name="Song4" type="AudioStreamPlayer" parent="Sound/Song"]
+stream = ExtResource("16_3itb7")
+volume_db = -10.796
 
-[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="Sound/Song"]
+[node name="Song5" type="AudioStreamPlayer" parent="Sound/Song"]
 
-[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="Sound/Song"]
+[node name="Song6" type="AudioStreamPlayer" parent="Sound/Song"]
 
-[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="Sound/Song"]
+[node name="Song7" type="AudioStreamPlayer" parent="Sound/Song"]
 
-[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="Sound/Song"]
+[node name="Song8" type="AudioStreamPlayer" parent="Sound/Song"]
+
+[node name="Song9" type="AudioStreamPlayer" parent="Sound/Song"]
 
 [node name="SFX" type="Node" parent="Sound"]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sound/SFX"]
-stream = ExtResource("12_8e4rw")
+[node name="SFX1" type="AudioStreamPlayer" parent="Sound/SFX"]
+stream = ExtResource("13_lnnoc")
+volume_db = -22.495
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Sound/SFX"]
+[node name="SFX2" type="AudioStreamPlayer" parent="Sound/SFX"]
+stream = ExtResource("17_se78y")
+volume_db = -21.585
+pitch_scale = 1.83
 
-[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="Sound/SFX"]
+[node name="SFX3" type="AudioStreamPlayer" parent="Sound/SFX"]
+stream = ExtResource("18_3d2qn")
+volume_db = -27.627
+pitch_scale = 0.66
 
-[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="Sound/SFX"]
+[node name="SFX4" type="AudioStreamPlayer" parent="Sound/SFX"]
 
-[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="Sound/SFX"]
+[node name="SFX5" type="AudioStreamPlayer" parent="Sound/SFX"]
 
-[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="Sound/SFX"]
+[node name="SFX6" type="AudioStreamPlayer" parent="Sound/SFX"]
 
-[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="Sound/SFX"]
+[node name="SFX7" type="AudioStreamPlayer" parent="Sound/SFX"]
 
-[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="Sound/SFX"]
+[node name="SFX8" type="AudioStreamPlayer" parent="Sound/SFX"]
+
+[node name="SFX9" type="AudioStreamPlayer" parent="Sound/SFX"]
 
 [node name="ChooseEnd" type="Node" parent="."]
 
 [node name="OrangeButton" type="Button" parent="ChooseEnd"]
-offset_left = -426.0
-offset_top = -340.0
-offset_right = -332.0
-offset_bottom = -308.0
+offset_left = -418.0
+offset_top = -222.0
+offset_right = -320.0
+offset_bottom = -190.0
 text = "จดหมายสีส้ม"
 
 [node name="WhiteButton" type="Button" parent="ChooseEnd"]
-offset_left = -303.0
-offset_top = -340.0
-offset_right = -197.0
-offset_bottom = -308.0
+offset_left = -295.0
+offset_top = -222.0
+offset_right = -189.0
+offset_bottom = -190.0
 text = "จดหมายสีขาว"
 
+[node name="DeadScreen" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="DeadScreen"]
+offset_right = 1296.0
+offset_bottom = 754.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="DeadScreen"]
+offset_left = 192.0
+offset_top = 64.0
+offset_right = 1077.0
+offset_bottom = 310.0
+theme_override_font_sizes/font_size = 180
+text = "YOU DIE"
+horizontal_alignment = 1
+
+[node name="RetryButton" type="Button" parent="DeadScreen"]
+offset_left = 176.0
+offset_top = 408.0
+offset_right = 612.0
+offset_bottom = 534.0
+theme_override_font_sizes/font_size = 50
+text = "Retry"
+
+[node name="MainMenuButton" type="Button" parent="DeadScreen"]
+offset_left = 752.0
+offset_top = 408.0
+offset_right = 1188.0
+offset_bottom = 534.0
+theme_override_font_sizes/font_size = 50
+text = "Menu"
+
+[node name="WinScreen" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="WinScreen"]
+offset_right = 1296.0
+offset_bottom = 754.0
+color = Color(0, 0.756633, 0.409942, 1)
+
+[node name="Label" type="Label" parent="WinScreen"]
+offset_top = 24.0
+offset_right = 1305.0
+offset_bottom = 270.0
+theme_override_font_sizes/font_size = 150
+text = "Congratulation
+Demo"
+horizontal_alignment = 1
+
+[node name="MainMenuButton" type="Button" parent="WinScreen"]
+offset_left = 400.0
+offset_top = 496.0
+offset_right = 928.0
+offset_bottom = 662.0
+theme_override_font_sizes/font_size = 50
+text = "Menu"
+
 [connection signal="pressed" from="NinjaBlue/Camera2D/dialog/Panel/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="NinjaBlue/Camera2D/dialog/Panel/Button" to="." method="_on_next_pressed"]
 [connection signal="pressed" from="ChooseEnd/OrangeButton" to="." method="_on_orange_button_pressed"]
 [connection signal="pressed" from="ChooseEnd/WhiteButton" to="." method="_on_white_button_pressed"]
+[connection signal="pressed" from="DeadScreen/RetryButton" to="." method="_on_retry_button_pressed"]
+[connection signal="pressed" from="DeadScreen/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="WinScreen/MainMenuButton" to="." method="_on_main_menu_button_pressed"]

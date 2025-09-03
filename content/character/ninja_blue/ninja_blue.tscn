@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://co5qpuj3hns3e"]
+[gd_scene load_steps=9 format=3 uid="uid://co5qpuj3hns3e"]
 
 [ext_resource type="PackedScene" uid="uid://skrlnoimlhsv" path="res://system/character/character.tscn" id="1_gjf68"]
 [ext_resource type="Texture2D" uid="uid://cb1puhmg81h5p" path="res://content/character/ninja_blue/sprite.png" id="2_hnmtc"]
+[ext_resource type="AudioStream" uid="uid://cgaervuq4mb4t" path="res://nut/RPG Sound Pack/battle/swing3.wav" id="3_4kg58"]
+[ext_resource type="AudioStream" uid="uid://b1gdhefuyvhm1" path="res://nut/RPG Sound Pack/interface/interface3.wav" id="4_nr4uu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4kg58"]
 size = Vector2(15, 19.375)
@@ -50,6 +52,15 @@ collision_mask = 4
 [node name="DamageZoneShape2D" type="CollisionShape2D" parent="DamageZone" index="0"]
 position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_4kg58")
+
+[node name="Punch" type="AudioStreamPlayer" parent="." index="6"]
+stream = ExtResource("3_4kg58")
+volume_db = -16.679
+
+[node name="GetHit" type="AudioStreamPlayer" parent="." index="7"]
+stream = ExtResource("4_nr4uu")
+volume_db = -16.679
+pitch_scale = 0.86
 
 [connection signal="area_entered" from="AttackZone" to="." method="_on_attack_zone_area_entered"]
 [connection signal="area_entered" from="DamageZone" to="." method="_on_damage_zone_area_entered"]

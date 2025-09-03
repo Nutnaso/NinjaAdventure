@@ -16,7 +16,7 @@ signal health_changed(current_health: int, max_health: int)
 @export_category("stats")
 @export var max_health: int = 100
 @export var invincible_time: float = 1.0
-@export var attack_power: int = 50
+@export var attack_power: int = 200
 @export var attack_duration: float = 0.3
 
 var current_health: int
@@ -49,9 +49,10 @@ func _physics_process(delta: float) -> void:
 
 	# ตรวจสอบสามารถขยับหรือไม่
 	if can_move:
-		move_vector = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+		move_vector = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 		if Input.is_action_just_pressed("ui_accept"):
 			start_attack()
+			
 	else:
 		move_vector = Vector2.ZERO
 
@@ -77,6 +78,7 @@ func _physics_process(delta: float) -> void:
 func start_attack() -> void:
 	if state == State.ATTACKING:
 		return
+	$Punch.play()
 	state = State.ATTACKING
 	attack_zone.monitoring = true
 	_attack_wait()
@@ -114,7 +116,8 @@ func _on_attack_zone_area_entered(area: Area2D) -> void:
 func take_damage(amount: int) -> void:
 	if invincible:
 		return
-
+	
+	$GetHit.play()
 	current_health -= amount
 	health_changed.emit(current_health, max_health)
 

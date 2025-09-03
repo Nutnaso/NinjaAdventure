@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+signal died
 # ---------------------------
 # Stats
 # ---------------------------
@@ -63,6 +63,7 @@ func _physics_process(delta: float) -> void:
 
 		State.DASH:
 			if dash_count < max_dash_count:
+				$jump.play()
 				_play("walk")
 				velocity = dash_direction * dash_speed
 				move_and_slide()
@@ -89,6 +90,7 @@ func _physics_process(delta: float) -> void:
 			_play("hit")
 
 		State.DEAD:
+			emit_signal("died")
 			queue_free()
 
 # ---------------------------

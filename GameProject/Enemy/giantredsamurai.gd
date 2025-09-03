@@ -1,12 +1,12 @@
 extends CharacterBody2D
-
+signal died
 # ---------------------------
 # Stats
 # ---------------------------
-@export var max_health: int = 50
+@export var max_health: int = 80
 var current_health: int
 
-@export var damage_to_player: int = 10
+@export var damage_to_player: int = 15
 @export var invincible_time: float = 0.5
 
 # ---------------------------
@@ -72,12 +72,14 @@ func _physics_process(delta: float) -> void:
 				move_and_slide()
 				chase_timer += delta
 				if chase_timer >= chase_time:
+					$Dash.play()
 					state = State.DASH
 					dash_direction = dir
 			else:
 				state = State.IDLE
 
 		State.DASH:
+
 			_play("walk") # หรือ animation dash แยก
 			velocity = dash_direction * dash_speed
 			move_and_slide()
@@ -105,6 +107,7 @@ func _physics_process(delta: float) -> void:
 			_play("hit")
 
 		State.DEAD:
+			emit_signal("died")
 			queue_free()
 
 # ---------------------------

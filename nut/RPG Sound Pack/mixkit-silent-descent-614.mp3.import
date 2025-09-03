@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/mixkit-silent-descent-614.mp3-92d153833e7ab8f
 [params]
 
 loop=false
-loop_offset=0
-bpm=0
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4

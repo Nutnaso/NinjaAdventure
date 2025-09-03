@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bcdfclsk0a671"]
+[gd_scene load_steps=7 format=3 uid="uid://bcdfclsk0a671"]
 
 [ext_resource type="Script" uid="uid://dyksiw2040ef7" path="res://nut/boss_snake.gd" id="1_h4rsx"]
+[ext_resource type="AudioStream" uid="uid://c7m02y2mb74qr" path="res://nut/RPG Sound Pack/mixkit-epical-drums-04-679.mp3" id="3_h4rsx"]
 [ext_resource type="Texture2D" uid="uid://6ejdbtpsng1l" path="res://nut/Head.png" id="4_2okyu"]
+[ext_resource type="AudioStream" uid="uid://drhb2r24cqtcv" path="res://nut/RPG Sound Pack/mixkit-big-dragon-in-the-wild-roar-16.wav" id="4_ktvog"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ehqle"]
 radius = 24.0
@@ -35,5 +37,13 @@ position = Vector2(0, -16)
 shape = SubResource("CircleShape2D_nh2vp")
 
 [node name="BodyContainer" type="Node2D" parent="."]
+
+[node name="BossSong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_h4rsx")
+volume_db = -22.566
+
+[node name="Hit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ktvog")
+volume_db = -20.783
 
 [connection signal="area_entered" from="Head/DamageZone" to="." method="_on_damage_zone_area_entered"]
